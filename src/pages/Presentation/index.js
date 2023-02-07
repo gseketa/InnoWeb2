@@ -44,12 +44,21 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/innMain3.jpg";
+import bgImage from "assets/images/bg-presentation.jpg";
 
 function Presentation() {
   return (
     <>
-      <DefaultNavbar brand="INNOVEVA" routes={routes} sticky />
+      <DefaultNavbar
+        routes={routes}
+        action={{
+          type: "external",
+          route: "https://www.creative-tim.com/product/material-kit-react",
+          label: "free download",
+          color: "info",
+        }}
+        sticky
+      />
       <MKBox
         minHeight="75vh"
         width="100%"
@@ -62,33 +71,30 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container>
-            <Grid item xs={0} lg={8} />
-            <Grid item xs={12} lg={4} justifyContent="flex-end" mx="auto">
-              <MKTypography
-                variant="h1"
-                color="blue"
-                textAlign="right"
-                mt={-6}
-                mb={1}
-                sx={({ breakpoints, typography: { size } }) => ({
-                  [breakpoints.down("md")]: {
-                    fontSize: size["3xl"],
-                  },
-                })}
-              >
-                WE ARE
-              </MKTypography>
-              <MKTypography
-                variant="body1"
-                color="grey-300"
-                textAlign="right"
-                mt={1}
-              >
-                engineering and consulting vehicula mattis eros in tincidunt. Quisque aliquam eros in 
-                ipsum fringila venenatis. Sed ac dictum est. In porttitormetus vel felis.
-              </MKTypography>
-            </Grid>
+          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+            <MKTypography
+              variant="h1"
+              color="white"
+              mt={-6}
+              mb={1}
+              sx={({ breakpoints, typography: { size } }) => ({
+                [breakpoints.down("md")]: {
+                  fontSize: size["3xl"],
+                },
+              })}
+            >
+              Material Kit 2 React{" "}
+            </MKTypography>
+            <MKTypography
+              variant="body1"
+              color="white"
+              textAlign="center"
+              px={{ xs: 6, lg: 12 }}
+              mt={1}
+            >
+              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
+              developers around the world.
+            </MKTypography>
           </Grid>
         </Container>
       </MKBox>
