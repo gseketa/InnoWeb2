@@ -26,13 +26,11 @@ import MKSocialButton from "components/MKSocialButton";
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
 import Testimonials from "pages/Presentation/sections/Testimonials";
 import Download from "pages/Presentation/sections/Download";
 
@@ -81,7 +79,7 @@ function Presentation() {
               </MKTypography>
               <MKTypography
                 variant="body1"
-                color="grey-300"
+                color="text"
                 textAlign="right"
                 mt={1}
               >
@@ -103,56 +101,36 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Counters />
-        <Information />
-        <DesignBlocks />
-        <Pages />
-        <Container sx={{ mt: 6 }}>
-          <BuiltByDevelopers />
-        </Container>
-        <Container>
-          <Grid container spacing={3}>
-            <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                variant="gradient"
-                color="info"
-                icon="flag"
-                title="Getting Started"
-                description="Check the possible ways of working with our product and the necessary files for building your own project."
-                action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
-                  label: "Let's start",
-                }}
-              />
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                color="info"
+      <Container>
+          <Grid container spacing={2}>
+            <Grid item xs={12} lg={6}>
+              <DefaultInfoCard
+                direction="center"
                 icon="precision_manufacturing"
-                title="Plugins"
-                description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
-                action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/datepicker/",
-                  label: "Read more",
-                }}
+                title="ENGINEERING"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat. "
               />
             </Grid>
-            <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                color="info"
+            <Grid item xs={12} lg={6}>
+              <DefaultInfoCard
+                direction="center"
                 icon="apps"
-                title="Components"
-                description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
-                action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
-                  label: "Read more",
-                }}
+                title="CONSULTING"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat. "
               />
             </Grid>
           </Grid>
+        </Container>
+        <Counters />
+        <Information />
+        <Container sx={{ mt: 6 }}>
+          <BuiltByDevelopers />
         </Container>
         <Testimonials />
         <Download />
