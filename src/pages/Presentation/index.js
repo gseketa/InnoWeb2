@@ -28,6 +28,7 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
+
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
@@ -44,10 +45,12 @@ import footerRoutes from "footer.routes";
 // Images
 import bgImage from "assets/images/innMain3.jpg";
 
+
 function Presentation() {
   return (
     <>
       <DefaultNavbar brand="INNOVEVA" routes={routes} sticky />
+      
       <MKBox
         minHeight="75vh"
         width="100%"
@@ -90,6 +93,7 @@ function Presentation() {
           </Grid>
         </Container>
       </MKBox>
+
       <Card
         sx={{
           p: 2,
@@ -101,24 +105,52 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-      <Container>
+      <MKBox
+        variant="gradient"
+        bgColor="light"
+        position="relative"
+        borderRadius="xl"
+        sx={{ overflow: "hidden" }}
+      >
+        <Container>
+            <Grid container spacing={2}>
+              <Grid item xs={12} lg={6}>
+                <DefaultInfoCard
+                  direction="center"
+                  icon="engineering"
+                  title="ENGINEERING"
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                  ut aliquip ex ea commodo consequat. "
+                />
+              </Grid>
+              <Grid item xs={12} lg={6}>
+                <DefaultInfoCard
+                  direction="center"
+                  icon="apps"
+                  title="CONSULTING"
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                  ut aliquip ex ea commodo consequat. "
+                />
+              </Grid>
+            </Grid>
+          </Container>
+        </MKBox>
+        <Container sx={{ mt: 10 }}>
           <Grid container spacing={2}>
             <Grid item xs={12} lg={6}>
               <DefaultInfoCard
                 direction="center"
-                icon="precision_manufacturing"
-                title="ENGINEERING"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat. "
+                description="PICTURE"
               />
             </Grid>
             <Grid item xs={12} lg={6}>
               <DefaultInfoCard
-                direction="center"
-                icon="apps"
-                title="CONSULTING"
+                direction="left"
+                title="SERVICES 1"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
