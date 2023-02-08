@@ -51,7 +51,7 @@ function Information() {
             Innoveva&apos;s services.
           </MKTypography>
         </Grid>
-        <Divider sx={{ my: 4 }} />
+        <Divider sx={{ my: 3 }} />
         <Grid container spacing={3} justifyContent="center">
           <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={appleLogo} alt="Apple" width="100%" opacity={0.6} />
