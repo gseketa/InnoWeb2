@@ -44,7 +44,8 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/innMain3.jpg";
-
+import innserv1 from "assets/images/innserv1.jpg";
+import innserv2 from "assets/images/innserv2.jpg";
 
 function Presentation() {
   return (
@@ -142,20 +143,80 @@ function Presentation() {
         <Container sx={{ mt: 10 }}>
           <Grid container spacing={2}>
             <Grid item xs={12} lg={6}>
-              <DefaultInfoCard
-                direction="center"
-                description="PICTURE"
-              />
+              <MKBox component="img" src={innserv1} alt="macbook" width="100%" />
             </Grid>
             <Grid item xs={12} lg={6}>
-              <DefaultInfoCard
-                direction="left"
-                title="SERVICES 1"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                <MKBox lineHeight={1} p={0} textAlign="left">
+                  <MKTypography
+                    display="block"
+                    variant="5"
+                    fontWeight="bold"
+                    mt={2}
+                    mb={1.5}
+                  >
+                    SERVICES 1
+                  </MKTypography>
+                  <MKTypography
+                    display="block"
+                    variant="body2"
+                    color="text"
+                    pr={6}
+                    pl={0}
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat. "
-              />
+                ut aliquip ex ea commodo consequat:
+                <ul style={{paddingLeft: '20px' }}>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                </ul>
+                  </MKTypography>
+              </MKBox>
+            </Grid>
+          </Grid>
+        </Container>
+        <Container sx={{ mt: 0 }}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} lg={6}>
+                <MKBox lineHeight={1} p={0} textAlign="left">
+                  <MKTypography
+                    display="block"
+                    variant="5"
+                    fontWeight="bold"
+                    mt={2}
+                    mb={1.5}
+                  >
+                    SERVICES 2
+                  </MKTypography>
+                  <MKTypography
+                    display="block"
+                    variant="body2"
+                    color="text"
+                    pr={6}
+                    pl={0}
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat:
+                <ul style={{paddingLeft: '20px' }}>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                </ul>
+                  </MKTypography>
+              </MKBox>              
+            </Grid>
+            <Grid item xs={12} lg={6}>
+              <MKBox component="img" src={innserv2} alt="macbook" width="100%" />
             </Grid>
           </Grid>
         </Container>
