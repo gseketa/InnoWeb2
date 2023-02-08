@@ -24,7 +24,7 @@ import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 
@@ -35,7 +35,7 @@ import Testimonials from "pages/Presentation/sections/Testimonials";
 
 // Routes
 import routes from "routes";
-import footerRoutes from "footer.routes";
+
 
 // Images
 import bgImage from "assets/images/innMain3.jpg";
@@ -131,7 +131,7 @@ function Presentation() {
         <Container sx={{ mt: 10 }}>
           <Grid container spacing={2}>
             <Grid item xs={12} lg={6}>
-              <MKBox component="img" src={innserv1} alt="macbook" width="100%" />
+              <MKBox component="img" src={innserv1} alt="innserv1" width="100%" />
             </Grid>
             <Grid item xs={12} lg={6}>
                 <MKBox lineHeight={1} p={0} textAlign="left">
@@ -204,7 +204,7 @@ function Presentation() {
               </MKBox>              
             </Grid>
             <Grid item xs={12} lg={6}>
-              <MKBox component="img" src={innserv2} alt="macbook" width="100%" />
+              <MKBox component="img" src={innserv2} alt="innserv2" width="100%" />
             </Grid>
           </Grid>
         </Container>
@@ -212,9 +212,60 @@ function Presentation() {
         <Testimonials />
         
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
-      </MKBox>
+        <Container sx={{ mt: 0 }}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} lg={6}>
+                <MKBox lineHeight={1} p={0} textAlign="center">
+                  <MKTypography
+                    display="block"
+                    variant="5"
+                    fontWeight="bold"
+                    mt={2}
+                    mb={1.5}
+                  >
+                    Innoveva Gmbh
+                  </MKTypography>
+                  <MKTypography
+                    display="block"
+                    variant="body2"
+                    color="text"
+                    pr={6}
+                    pl={0}
+                  >
+                    Lorem ipsum dolor sit amet,consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat:
+                  </MKTypography>
+              </MKBox>              
+            </Grid>
+           <Grid item xs={12} lg={6}>
+                <MKBox lineHeight={1} p={0} textAlign="center">
+                  <MKTypography
+                    display="block"
+                    variant="5"
+                    fontWeight="bold"
+                    mt={2}
+                    mb={1.5}
+                  >
+                    Innoveva d.o.o.
+                  </MKTypography>
+                  <MKTypography
+                    display="block"
+                    variant="body2"
+                    color="text"
+                    pr={6}
+                    pl={0}
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat:
+                  </MKTypography>
+              </MKBox>              
+            </Grid>
+          </Grid>
+        </Container>
     </>
   );
 }
