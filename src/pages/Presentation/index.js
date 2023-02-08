@@ -106,13 +106,7 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-      <MKBox
-        variant="gradient"
-        bgColor="light"
-        position="relative"
-        borderRadius="xl"
-        sx={{ overflow: "hidden" }}
-      >
+
         <Container>
             <Grid container spacing={2}>
               <Grid item xs={12} lg={6}>
@@ -139,7 +133,7 @@ function Presentation() {
               </Grid>
             </Grid>
           </Container>
-        </MKBox>
+
         <Container sx={{ mt: 10 }}>
           <Grid container spacing={2}>
             <Grid item xs={12} lg={6}>
