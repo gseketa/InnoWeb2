@@ -43,7 +43,10 @@ import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMob
 // Material Kit 2 React base styles
 import breakpoints from "assets/theme/base/breakpoints";
 
-function DefaultNavbar({ brand, routes, transparent, light, action, sticky, relative, center }) {
+// Images
+import innlogo from "assets/images/logos/inn-logos/innlogo.png";
+
+function DefaultNavbar({ routes, transparent, light, action, sticky, relative, center }) {
   const [dropdown, setDropdown] = useState("");
   const [dropdownEl, setDropdownEl] = useState("");
   const [dropdownName, setDropdownName] = useState("");
@@ -469,17 +472,14 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
         })}
       >
         <MKBox display="flex" justifyContent="space-between" alignItems="center">
-          <MKBox
-            component={Link}
-            to="/"
-            lineHeight={1}
-            py={transparent ? 1.5 : 0.75}
-            pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
-          >
-            <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
-              {brand}
-            </MKTypography>
-          </MKBox>
+          <Link to="/">
+            <MKBox
+              component="img"
+              src={innlogo}
+              alt="innlogo" 
+              maxWidth="6rem"
+            />
+          </Link>
           <MKBox
             color="inherit"
             display={{ xs: "none", lg: "flex" }}
@@ -551,7 +551,6 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
 
 // Setting default values for the props of DefaultNavbar
 DefaultNavbar.defaultProps = {
-  brand: "Material Kit 2",
   transparent: false,
   light: false,
   action: false,
@@ -562,7 +561,6 @@ DefaultNavbar.defaultProps = {
 
 // Typechecking props for the DefaultNavbar
 DefaultNavbar.propTypes = {
-  brand: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.object).isRequired,
   transparent: PropTypes.bool,
   light: PropTypes.bool,
