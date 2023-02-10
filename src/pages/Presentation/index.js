@@ -60,7 +60,7 @@ function Presentation() {
           placeItems: "center",
         }}
       >
-        <Container>
+        <Container id="servicesContainer">
           <Grid container>
             <Grid item xs={0} lg={8} />
             <Grid item xs={12} lg={4} justifyContent="flex-end" mx="auto">
@@ -210,11 +210,12 @@ function Presentation() {
             </Grid>
           </Grid>
         </Container>
+        <Container id="referencesContainer"/>
         <Counters />
         <Testimonials />
         
       </Card>
-        <Container sx={{ mt: 0, mb:3 }}>
+        <Container id="contactContainer" sx={{ mt: 0, mb:3 }}>
           <Grid container spacing={0} justify="center">
             <Grid xs={0} lg={3}/>
             <Grid item xs={12} lg={3} offset={3}>

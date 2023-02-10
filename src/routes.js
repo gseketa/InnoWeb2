@@ -47,15 +47,18 @@ import LanguageIcon from '@mui/icons-material/Language';
 const routes = [
   {
     name: "services",
-    icon: <MiscellaneousServicesIcon />
+    icon: <MiscellaneousServicesIcon />,
+    scrollToId: "servicesContainer"
   },
   {
     name: "references",
-    icon: <HubIcon />
+    icon: <HubIcon />,
+    scrollToId: "referencesContainer"
   },
   {
     name: "contact",
-    icon: <ContactMailIcon />
+    icon: <ContactMailIcon />,
+    scrollToId: "contactContainer"
   },
   {
     name: "Language",
