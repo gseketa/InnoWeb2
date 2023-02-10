@@ -212,8 +212,8 @@ function Presentation() {
         <Testimonials />
         
       </Card>
-        <Container sx={{ mt: 0 }}>
-          <Grid container spacing={2}>
+        <Container sx={{ mt: 0, mb:10 }}>
+          <Grid container spacing={0}>
             <Grid item xs={12} lg={6}>
                 <MKBox lineHeight={1} p={0} textAlign="center">
                   <MKTypography
@@ -223,19 +223,21 @@ function Presentation() {
                     mt={2}
                     mb={1.5}
                   >
-                    Innoveva Gmbh
+                   Innoveva GmbH
                   </MKTypography>
                   <MKTypography
                     display="block"
                     variant="body2"
                     color="text"
-                    pr={6}
+                    pr={0}
                     pl={0}
                   >
-                    Lorem ipsum dolor sit amet,consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat:
+                    Werkstrasse 12<br /> 
+                    CH-5080 Laufenburg<br /> 
+                    Switzerland<br /> 
+                    MwStNo.:CHE-464.171.623 MWST<br /> 
+                    Tel: 0041628744070<br />
+                    contact@innoveva.com<br />  
                   </MKTypography>
               </MKBox>              
             </Grid>
@@ -254,13 +256,15 @@ function Presentation() {
                     display="block"
                     variant="body2"
                     color="text"
-                    pr={6}
+                    pr={0}
                     pl={0}
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat:
+                    Siget 19<br /> 
+                    10000 Zagreb<br /> 
+                    Croatia<br /> 
+                    OIB:34782265468<br /> 
+                    Tel: 00385996607564<br />
+                    contact@innoveva.com<br /> 
                   </MKTypography>
               </MKBox>              
             </Grid>

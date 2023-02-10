@@ -477,7 +477,7 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
               component="img"
               src={innlogo}
               alt="innlogo" 
-              maxWidth="6rem"
+              maxWidth="10rem"
             />
           </Link>
           <MKBox
