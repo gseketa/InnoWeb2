@@ -38,23 +38,24 @@ Coded by www.creative-tim.com
 
 
 // @mui icons
-import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
-import HubIcon from '@mui/icons-material/Hub';
+
+// import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
+// import HubIcon from '@mui/icons-material/Hub';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import LanguageIcon from '@mui/icons-material/Language';
 
 
 const routes = [
-  {
-    name: "services",
-    icon: <MiscellaneousServicesIcon />,
-    scrollToId: "servicesContainer"
-  },
-  {
-    name: "references",
-    icon: <HubIcon />,
-    scrollToId: "referencesContainer"
-  },
+  // {
+  //   name: "services",
+  //   icon: <MiscellaneousServicesIcon />,
+  //   scrollToId: "servicesContainer"
+  // },
+  // {
+  //   name: "references",
+  //   icon: <HubIcon />,
+  //   scrollToId: "referencesContainer"
+  // },
   {
     name: "contact",
     icon: <ContactMailIcon />,
