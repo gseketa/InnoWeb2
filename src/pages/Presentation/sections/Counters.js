@@ -39,7 +39,7 @@ function Counters() {
           <Grid item xs={12} md={4} display="flex">
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
             <DefaultCounterCard
-              count={20}
+              count={30}
               title="Experts"
               description="With experience in various projects"
             />

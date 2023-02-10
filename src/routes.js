@@ -59,7 +59,18 @@ const routes = [
   },
   {
     name: "Language",
-    icon: <LanguageIcon />
+    icon: <LanguageIcon />,
+    collapse: [
+      {
+        name:"english"
+      },
+      {
+        name:"deutsch"
+      },
+      {
+        name:"hrvatski"
+      }
+      ]
   },
 ];
 
