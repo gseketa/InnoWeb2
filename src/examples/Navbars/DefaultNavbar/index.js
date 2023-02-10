@@ -46,6 +46,7 @@ import breakpoints from "assets/theme/base/breakpoints";
 // Images
 import innlogo from "assets/images/logos/inn-logos/innlogo.png";
 
+
 function DefaultNavbar({ routes, transparent, light, action, sticky, relative, center }) {
   const [dropdown, setDropdown] = useState("");
   const [dropdownEl, setDropdownEl] = useState("");
@@ -84,7 +85,9 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
     return () => window.removeEventListener("resize", displayMobileNavbar);
   }, []);
 
-  const renderNavbarItems = routes.map(({ name, icon, href, route, collapse }) => (
+
+
+  const renderNavbarItems = routes.map(({ name, icon, href, route, collapse, scrollToId }) => (
     <DefaultNavbarDropdown
       key={name}
       name={name}
@@ -100,6 +103,14 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
         }
       }}
       onMouseLeave={() => collapse && setDropdown(null)}
+      onClick={() => {
+        const element = document.getElementById(scrollToId);
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+          });
+        }
+      }}
       light={light}
     />
   ));
