@@ -42,6 +42,8 @@ import bgImage from "assets/images/innMain3.jpg";
 import innserv1 from "assets/images/innserv1.jpg";
 import innserv2 from "assets/images/innserv2.jpg";
 
+const date = new Date().getFullYear();
+
 function Presentation() {
   return (
     <>
@@ -212,9 +214,10 @@ function Presentation() {
         <Testimonials />
         
       </Card>
-        <Container sx={{ mt: 0, mb:10 }}>
-          <Grid container spacing={0}>
-            <Grid item xs={12} lg={6}>
+        <Container sx={{ mt: 0, mb:3 }}>
+          <Grid container spacing={0} justify="center">
+            <Grid xs={0} lg={3}/>
+            <Grid item xs={12} lg={3} offset={3}>
                 <MKBox lineHeight={1} p={0} textAlign="center">
                   <MKTypography
                     display="block"
@@ -241,7 +244,7 @@ function Presentation() {
                   </MKTypography>
               </MKBox>              
             </Grid>
-           <Grid item xs={12} lg={6}>
+           <Grid item xs={12} lg={3} lgOffset={1}>
                 <MKBox lineHeight={1} p={0} textAlign="center">
                   <MKTypography
                     display="block"
@@ -268,6 +271,17 @@ function Presentation() {
                   </MKTypography>
               </MKBox>              
             </Grid>
+          </Grid>
+          <Grid item xs={12} sx={{ textAlign: "center", my: 6 }}>
+                  <MKTypography
+                    display="block"
+                    variant="body2"
+                    color="text"
+                    pr={0}
+                    pl={0}
+                  >
+                    All rights reserved. Copyright &copy; {date} Innoveva GmbH
+                  </MKTypography>
           </Grid>
         </Container>
     </>
