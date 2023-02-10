@@ -13,6 +13,8 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+import {useState} from "react";
+
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -44,10 +46,33 @@ import innserv2 from "assets/images/innserv2.jpg";
 
 const date = new Date().getFullYear();
 
+const LANGUAGES = {
+  english: {
+    weAre: 'WE ARE',
+  },
+  deutsch: {
+    weAre: 'WIR SIND',
+  },
+  hrvatski: {
+    weAre: 'MI SMO',
+  }
+};
+
+const DEFAULT_LANGUAGE = 'english';
+
 function Presentation() {
+  
+  const [language, setLanguage] = useState(DEFAULT_LANGUAGE);
+
+  const handleLanguageChange = (newLanguage) => {
+    setLanguage(newLanguage);
+    //  console.log(`The current language is: ${language}`);
+  };
+
+
   return (
     <>
-      <DefaultNavbar brand="INNOVEVA" routes={routes} sticky />
+      <DefaultNavbar brand="INNOVEVA" routes={routes} sticky onLanguageChange={handleLanguageChange} />
       
       <MKBox
         minHeight="75vh"
@@ -75,7 +100,7 @@ function Presentation() {
                   },
                 })}
               >
-                WE ARE
+                {LANGUAGES[language].weAre}
               </MKTypography>
               <MKTypography
                 variant="body1"

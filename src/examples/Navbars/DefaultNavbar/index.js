@@ -47,7 +47,7 @@ import breakpoints from "assets/theme/base/breakpoints";
 import innlogo from "assets/images/logos/inn-logos/innlogo.png";
 
 
-function DefaultNavbar({ routes, transparent, light, action, sticky, relative, center }) {
+function DefaultNavbar({ routes, transparent, light, action, sticky, relative, center, onLanguageChange= () => {}  }) {
   const [dropdown, setDropdown] = useState("");
   const [dropdownEl, setDropdownEl] = useState("");
   const [dropdownName, setDropdownName] = useState("");
@@ -86,8 +86,7 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
   }, []);
 
 
-
-  const renderNavbarItems = routes.map(({ name, icon, href, route, collapse, scrollToId }) => (
+const renderNavbarItems = routes.map(({ name, icon, href, route, collapse, scrollToId, type}) => (
     <DefaultNavbarDropdown
       key={name}
       name={name}
@@ -103,17 +102,20 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
         }
       }}
       onMouseLeave={() => collapse && setDropdown(null)}
+      light={light}
       onClick={() => {
-        const element = document.getElementById(scrollToId);
-        if (element) {
-          element.scrollIntoView({
-            behavior: 'smooth',
-          });
+        if (type === "scroll") {
+          const element = document.getElementById(scrollToId);
+          if (element) {
+            element.scrollIntoView({
+              behavior: 'smooth',
+            });
+          }
         }
       }}
-      light={light}
     />
   ));
+  
 
   // Render the routes on the dropdown menu
   const renderRoutes = routes.map(({ name, collapse, columns, rowsPerColumn }) => {
@@ -259,6 +261,12 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
               if (item.dropdown) {
                 setNestedDropdown(null);
               }
+            }}
+            onClick={() => {
+              if (item.type === "language") {
+                onLanguageChange(item.name);
+                console.log(`The current language is: ${item.name}`);
+              } 
             }}
           >
             {item.description ? (
@@ -568,6 +576,7 @@ DefaultNavbar.defaultProps = {
   sticky: false,
   relative: false,
   center: false,
+  onLanguageChange: () => {}
 };
 
 // Typechecking props for the DefaultNavbar
@@ -598,6 +607,7 @@ DefaultNavbar.propTypes = {
   sticky: PropTypes.bool,
   relative: PropTypes.bool,
   center: PropTypes.bool,
+  onLanguageChange: PropTypes.func,
 };
 
 export default DefaultNavbar;

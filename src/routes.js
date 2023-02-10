@@ -59,20 +59,24 @@ const routes = [
   {
     name: "contact",
     icon: <ContactMailIcon />,
-    scrollToId: "contactContainer"
+    scrollToId: "contactContainer",
+    type: "scroll"
   },
   {
     name: "Language",
     icon: <LanguageIcon />,
     collapse: [
       {
-        name:"english"
+        name:"english",
+        type:"language"
       },
       {
-        name:"deutsch"
+        name:"deutsch",
+        type:"language"
       },
       {
-        name:"hrvatski"
+        name:"hrvatski",
+        type:"language"
       }
       ]
   },
