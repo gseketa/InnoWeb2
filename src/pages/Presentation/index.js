@@ -24,7 +24,7 @@ import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 
@@ -35,12 +35,14 @@ import Testimonials from "pages/Presentation/sections/Testimonials";
 
 // Routes
 import routes from "routes";
-import footerRoutes from "footer.routes";
+
 
 // Images
 import bgImage from "assets/images/innMain3.jpg";
 import innserv1 from "assets/images/innserv1.jpg";
 import innserv2 from "assets/images/innserv2.jpg";
+
+const date = new Date().getFullYear();
 
 function Presentation() {
   return (
@@ -131,7 +133,7 @@ function Presentation() {
         <Container sx={{ mt: 10 }}>
           <Grid container spacing={2}>
             <Grid item xs={12} lg={6}>
-              <MKBox component="img" src={innserv1} alt="macbook" width="100%" />
+              <MKBox component="img" src={innserv1} alt="innserv1" width="100%" />
             </Grid>
             <Grid item xs={12} lg={6}>
                 <MKBox lineHeight={1} p={0} textAlign="left">
@@ -204,7 +206,7 @@ function Presentation() {
               </MKBox>              
             </Grid>
             <Grid item xs={12} lg={6}>
-              <MKBox component="img" src={innserv2} alt="macbook" width="100%" />
+              <MKBox component="img" src={innserv2} alt="innserv2" width="100%" />
             </Grid>
           </Grid>
         </Container>
@@ -212,9 +214,76 @@ function Presentation() {
         <Testimonials />
         
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
-      </MKBox>
+        <Container sx={{ mt: 0, mb:3 }}>
+          <Grid container spacing={0} justify="center">
+            <Grid xs={0} lg={3}/>
+            <Grid item xs={12} lg={3} offset={3}>
+                <MKBox lineHeight={1} p={0} textAlign="center">
+                  <MKTypography
+                    display="block"
+                    variant="5"
+                    fontWeight="bold"
+                    mt={2}
+                    mb={1.5}
+                  >
+                   Innoveva GmbH
+                  </MKTypography>
+                  <MKTypography
+                    display="block"
+                    variant="body2"
+                    color="text"
+                    pr={0}
+                    pl={0}
+                  >
+                    Werkstrasse 12<br /> 
+                    CH-5080 Laufenburg<br /> 
+                    Switzerland<br /> 
+                    MwStNo.:CHE-464.171.623 MWST<br /> 
+                    Tel: 0041628744070<br />
+                    contact@innoveva.com<br />  
+                  </MKTypography>
+              </MKBox>              
+            </Grid>
+           <Grid item xs={12} lg={3} lgOffset={1}>
+                <MKBox lineHeight={1} p={0} textAlign="center">
+                  <MKTypography
+                    display="block"
+                    variant="5"
+                    fontWeight="bold"
+                    mt={2}
+                    mb={1.5}
+                  >
+                    Innoveva d.o.o.
+                  </MKTypography>
+                  <MKTypography
+                    display="block"
+                    variant="body2"
+                    color="text"
+                    pr={0}
+                    pl={0}
+                  >
+                    Siget 19<br /> 
+                    10000 Zagreb<br /> 
+                    Croatia<br /> 
+                    OIB:34782265468<br /> 
+                    Tel: 00385996607564<br />
+                    contact@innoveva.com<br /> 
+                  </MKTypography>
+              </MKBox>              
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sx={{ textAlign: "center", my: 6 }}>
+                  <MKTypography
+                    display="block"
+                    variant="body2"
+                    color="text"
+                    pr={0}
+                    pl={0}
+                  >
+                    All rights reserved. Copyright &copy; {date} Innoveva GmbH
+                  </MKTypography>
+          </Grid>
+        </Container>
     </>
   );
 }

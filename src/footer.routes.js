@@ -1,4 +1,4 @@
-// @mui icons
+
 
 
 // Material Kit 2 React components
@@ -15,8 +15,7 @@ export default {
     image: innlogo,
     route: "/",
   },
-  socials: [
-    
+  socials: [   
   ],
   menus: [
     {
