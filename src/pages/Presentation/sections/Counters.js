@@ -24,7 +24,38 @@ import MKBox from "components/MKBox";
 // Material Kit 2 React examples
 import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
 
-function Counters() {
+// prop-types is a library for typechecking of props.
+import PropTypes from "prop-types";
+
+const LANGUAGES = {
+  english: {
+    firstTitle: 'Years on the market',
+    firstText: 'Providing high quality services to our customers',
+    secondTitle: 'Experts',
+    secondText: 'With experience in various projects',
+    thirdTitle: 'Projects',
+    thirdText: 'For different industries all around the globe',
+  },
+  deutsch: {
+    firstTitle: 'Jaren auf dem Markt',
+    firstText: 'Providing high quality services to our customers',
+    secondTitle: 'Experts',
+    secondText: 'With experience in various projects',
+    thirdTitle: 'Projects',
+    thirdText: 'For different industries all around the globe',
+  },
+  hrvatski: {
+    firstTitle: 'Years on the market',
+    firstText: 'Providing high quality services to our customers',
+    secondTitle: 'Experts',
+    secondText: 'With experience in various projects',
+    thirdTitle: 'Projects',
+    thirdText: 'For different industries all around the globe',
+  }
+};
+
+
+function Counters({currentlanguage}) {
   return (
     <MKBox component="section" py={3}>
       <Container>
@@ -32,16 +63,16 @@ function Counters() {
           <Grid item xs={12} md={4}>
             <DefaultCounterCard
               count={17}
-              title="Years on the market"
-              description="Providing high quality services to our customers"
+              title={LANGUAGES[currentlanguage].firstTitle}
+              description={LANGUAGES[currentlanguage].firstText}
             />
           </Grid>
           <Grid item xs={12} md={4} display="flex">
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
             <DefaultCounterCard
               count={30}
-              title="Experts"
-              description="With experience in various projects"
+              title={LANGUAGES[currentlanguage].secondTitle}
+              description={LANGUAGES[currentlanguage].secondText}
             />
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
           </Grid>
@@ -49,8 +80,8 @@ function Counters() {
             <DefaultCounterCard
               count={70}
               suffix="+"
-              title="Projects"
-              description="For different industries all around the globe"
+              title={LANGUAGES[currentlanguage].thirdTitle}
+              description={LANGUAGES[currentlanguage].thirdText}
             />
           </Grid>
         </Grid>
@@ -58,5 +89,9 @@ function Counters() {
     </MKBox>
   );
 }
+
+Counters.propTypes = {
+  currentlanguage: PropTypes.string.isRequired,
+  };
 
 export default Counters;

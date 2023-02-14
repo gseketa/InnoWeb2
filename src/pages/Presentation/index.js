@@ -395,7 +395,7 @@ function Presentation() {
           </Grid>
         </Container>
         <Container id="referencesContainer"/>
-        <Counters />
+        <Counters currentlanguage={language} />
         <Testimonials />
         
       </Card>
