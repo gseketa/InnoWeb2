@@ -45,7 +45,7 @@ import ContactMailIcon from '@mui/icons-material/ContactMail';
 import LanguageIcon from '@mui/icons-material/Language';
 
 
-const routes = [
+const routesHR = [
   // {
   //   name: "services",
   //   icon: <MiscellaneousServicesIcon />,
@@ -57,13 +57,13 @@ const routes = [
   //   scrollToId: "referencesContainer"
   // },
   {
-    name: "Contact",
+    name: "Kontakt",
     icon: <ContactMailIcon />,
     scrollToId: "contactContainer",
     type: "scroll"
   },
   {
-    name: "Language",
+    name: "Jezik",
     icon: <LanguageIcon />,
     collapse: [
       {
@@ -82,4 +82,4 @@ const routes = [
   },
 ];
 
-export default routes;
+export default routesHR;

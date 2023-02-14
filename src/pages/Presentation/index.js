@@ -37,6 +37,8 @@ import Testimonials from "pages/Presentation/sections/Testimonials";
 
 // Routes
 import routes from "routes";
+import routesDE from "routesDE";
+import routesHR from "routesHR";
 
 
 // Images
@@ -201,13 +203,26 @@ function Presentation() {
 
   const handleLanguageChange = (newLanguage) => {
     setLanguage(newLanguage);
-    //  console.log(`The current language is: ${language}`);
+      // console.log(`The current language is: ${language}`);
   };
 
 
   return (
     <>
-      <DefaultNavbar brand="INNOVEVA" routes={routes} sticky onLanguageChange={handleLanguageChange} />
+      <DefaultNavbar  brand="INNOVEVA" 
+                      routes={(() => {
+                        switch (language) {
+                          case 'english':
+                            return routes;
+                          case 'deutsch':
+                            return routesDE;
+                          case 'hrvatski':
+                            return routesHR;
+                          default:
+                            return routes;
+                        }
+                      })()} 
+                      sticky onLanguageChange={handleLanguageChange} />
       
       <MKBox
         minHeight="75vh"
