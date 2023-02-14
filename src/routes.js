@@ -57,13 +57,13 @@ const routes = [
   //   scrollToId: "referencesContainer"
   // },
   {
-    name: "contact",
+    name: "contact/Kontakt",
     icon: <ContactMailIcon />,
     scrollToId: "contactContainer",
     type: "scroll"
   },
   {
-    name: "Language",
+    name: "Language/Sprache",
     icon: <LanguageIcon />,
     collapse: [
       {
@@ -74,10 +74,10 @@ const routes = [
         name:"deutsch",
         type:"language"
       },
-      {
-        name:"hrvatski",
-        type:"language"
-      }
+      // {
+      //   name:"hrvatski",
+      //   type:"language"
+      // }
       ]
   },
 ];
