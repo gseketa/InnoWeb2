@@ -425,7 +425,7 @@ function Presentation() {
                     {LANGUAGES[language].contactCountrySwitzerland}<br /> 
                     MwStNo.:CHE-464.171.623 MWST<br /> 
                     Tel: 0041628744070<br />
-                    contact@innoveva.com<br />  
+                    info@innoveva.com<br />  
                   </MKTypography>
               </MKBox>              
             </Grid>
@@ -451,8 +451,8 @@ function Presentation() {
                     10000 Zagreb<br /> 
                     {LANGUAGES[language].contactCountryCroatia}<br /> 
                     OIB:34782265468<br /> 
-                    Tel: 00385996607564<br />
-                    contact@innoveva.com<br /> 
+                    Tel: 00385916114662<br />
+                    info@innoveva.com<br /> 
                   </MKTypography>
               </MKBox>              
             </Grid>
