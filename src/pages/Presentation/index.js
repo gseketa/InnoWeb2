@@ -51,15 +51,15 @@ const LANGUAGES = {
     weAre: 'WE ARE',
     weAreText:`engineering and consulting vehicula mattis eros in tincidunt. 
     Quisque aliquam eros in ipsum fringila venenatis. Sed ac dictum est. In porttitormetus vel felis.`,
-    engineeringTitle: 'ENGINEERING',
+    engineeringTitle: 'ENGINEERING SERVICES',
     engineeringText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. `,
-    consultingTitle: 'CONSULTING',
+    consultingTitle: 'CONSULTING & PM SERVICES',
     consultingText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. `,
-    services1Title: 'SERVICES 1',
+    services1Title: 'CONSULTING',
     services1Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
@@ -70,7 +70,7 @@ const LANGUAGES = {
     services1Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     services1Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     services1Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services2Title: 'SERVICES 2',
+    services2Title: 'PM SERVICES',
     services2Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
@@ -81,6 +81,17 @@ const LANGUAGES = {
     services2Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     services2Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     services2Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Title: 'ENGINEERING SERVICES',
+    services3Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat: `,
+    services3Bullet1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     contactCountrySwitzerland: `Switzerland`,
     contactCountryCroatia: `Croatia`,
   },
@@ -118,6 +129,17 @@ const LANGUAGES = {
     services2Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     services2Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     services2Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Title: 'SERVICES 3',
+    services3Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat: `,
+    services3Bullet1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     contactCountrySwitzerland: `Schweitz`,
     contactCountryCroatia: `Kroatien`,
   },
@@ -155,6 +177,17 @@ const LANGUAGES = {
     services2Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     services2Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     services2Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Title: 'SERVICES 3',
+    services3Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat: `,
+    services3Bullet1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services3Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     contactCountrySwitzerland: `Švicarska`,
     contactCountryCroatia: `Hrvatska`,
   }
@@ -234,17 +267,17 @@ function Presentation() {
               <Grid item xs={12} lg={6}>
                 <DefaultInfoCard
                   direction="center"
-                  icon="engineering"
-                  title={LANGUAGES[language].engineeringTitle}
-                  description={LANGUAGES[language].engineeringText}
+                  icon="apps"
+                  title={LANGUAGES[language].consultingTitle}
+                  description={LANGUAGES[language].consultingText}
                 />
               </Grid>
               <Grid item xs={12} lg={6}>
                 <DefaultInfoCard
                   direction="center"
-                  icon="apps"
-                  title={LANGUAGES[language].consultingTitle}
-                  description={LANGUAGES[language].consultingText}
+                  icon="engineering"
+                  title={LANGUAGES[language].engineeringTitle}
+                  description={LANGUAGES[language].engineeringText}
                 />
               </Grid>
             </Grid>
@@ -321,6 +354,43 @@ function Presentation() {
             </Grid>
             <Grid item xs={12} lg={6}>
               <MKBox component="img" src={innserv2} alt="innserv2" width="100%" />
+            </Grid>
+          </Grid>
+        </Container>
+        <Container sx={{ mt: 10 }}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} lg={6}>
+              <MKBox component="img" src={innserv1} alt="innserv1" width="100%" />
+            </Grid>
+            <Grid item xs={12} lg={6}>
+                <MKBox lineHeight={1} p={0} textAlign="left">
+                  <MKTypography
+                    display="block"
+                    variant="5"
+                    fontWeight="bold"
+                    mt={2}
+                    mb={1.5}
+                  >
+                    {LANGUAGES[language].services3Title}
+                  </MKTypography>
+                  <MKTypography
+                    display="block"
+                    variant="body2"
+                    color="text"
+                    pr={6}
+                    pl={0}
+                  >
+                    {LANGUAGES[language].services3Text}
+                <ul style={{paddingLeft: '20px' }}>
+                  <li>{LANGUAGES[language].services3Bullet1}</li>
+                  <li>{LANGUAGES[language].services3Bullet2}</li>
+                  <li>{LANGUAGES[language].services3Bullet3}</li>
+                  <li>{LANGUAGES[language].services3Bullet4}</li>
+                  <li>{LANGUAGES[language].services3Bullet5}</li>
+                  <li>{LANGUAGES[language].services3Bullet6}</li>
+                </ul>
+                  </MKTypography>
+              </MKBox>
             </Grid>
           </Grid>
         </Container>
