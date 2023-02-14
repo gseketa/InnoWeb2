@@ -32,7 +32,7 @@ function Counters() {
           <Grid item xs={12} md={4}>
             <DefaultCounterCard
               count={17}
-              title="Years"
+              title="Years on the market"
               description="Providing high quality services to our customers"
             />
           </Grid>

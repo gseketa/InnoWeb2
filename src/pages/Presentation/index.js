@@ -49,12 +49,114 @@ const date = new Date().getFullYear();
 const LANGUAGES = {
   english: {
     weAre: 'WE ARE',
+    weAreText:`engineering and consulting vehicula mattis eros in tincidunt. 
+    Quisque aliquam eros in ipsum fringila venenatis. Sed ac dictum est. In porttitormetus vel felis.`,
+    engineeringTitle: 'ENGINEERING',
+    engineeringText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. `,
+    consultingTitle: 'CONSULTING',
+    consultingText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. `,
+    services1Title: 'SERVICES 1',
+    services1Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat:`,
+    services1Bullet1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Title: 'SERVICES 2',
+    services2Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat: `,
+    services2Bullet1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    contactCountrySwitzerland: `Switzerland`,
+    contactCountryCroatia: `Croatia`,
   },
   deutsch: {
     weAre: 'WIR SIND',
+    weAreText:`engineering and consulting vehicula mattis eros in tincidunt. 
+    Quisque aliquam eros in ipsum fringila venenatis. Sed ac dictum est. In porttitormetus vel felis.`,
+    engineeringTitle: 'ENGINEERING', 
+    engineeringText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. `, 
+    consultingTitle: 'CONSULTING',
+    consultingText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. `,
+    services1Title: 'SERVICES 1',
+    services1Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat:`,
+    services1Bullet1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Title: 'SERVICES 2',
+    services2Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat: `,
+    services2Bullet1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    contactCountrySwitzerland: `Schweitz`,
+    contactCountryCroatia: `Kroatien`,
   },
   hrvatski: {
     weAre: 'MI SMO',
+    weAreText:`engineering and consulting vehicula mattis eros in tincidunt. 
+    Quisque aliquam eros in ipsum fringila venenatis. Sed ac dictum est. In porttitormetus vel felis.`,
+    engineeringTitle: 'INŽENJERING',
+    engineeringText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. `,
+    consultingTitle: 'CONSULTING',
+    consultingText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. `,
+    services1Title: 'SERVICES 1',
+    services1Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat:`,
+    services1Bullet1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Title: 'SERVICES 2',
+    services2Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat: `,
+    services2Bullet1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services2Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    contactCountrySwitzerland: `Švicarska`,
+    contactCountryCroatia: `Hrvatska`,
   }
 };
 
@@ -108,8 +210,7 @@ function Presentation() {
                 textAlign="right"
                 mt={1}
               >
-                engineering and consulting vehicula mattis eros in tincidunt. Quisque aliquam eros in 
-                ipsum fringila venenatis. Sed ac dictum est. In porttitormetus vel felis.
+                {LANGUAGES[language].weAreText}
               </MKTypography>
             </Grid>
           </Grid>
@@ -134,22 +235,16 @@ function Presentation() {
                 <DefaultInfoCard
                   direction="center"
                   icon="engineering"
-                  title="ENGINEERING"
-                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                  ut aliquip ex ea commodo consequat. "
+                  title={LANGUAGES[language].engineeringTitle}
+                  description={LANGUAGES[language].engineeringText}
                 />
               </Grid>
               <Grid item xs={12} lg={6}>
                 <DefaultInfoCard
                   direction="center"
                   icon="apps"
-                  title="CONSULTING"
-                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                  ut aliquip ex ea commodo consequat. "
+                  title={LANGUAGES[language].consultingTitle}
+                  description={LANGUAGES[language].consultingText}
                 />
               </Grid>
             </Grid>
@@ -169,7 +264,7 @@ function Presentation() {
                     mt={2}
                     mb={1.5}
                   >
-                    SERVICES 1
+                    {LANGUAGES[language].services1Title}
                   </MKTypography>
                   <MKTypography
                     display="block"
@@ -178,17 +273,14 @@ function Presentation() {
                     pr={6}
                     pl={0}
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat:
+                    {LANGUAGES[language].services1Text}
                 <ul style={{paddingLeft: '20px' }}>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li>{LANGUAGES[language].services1Bullet1}</li>
+                  <li>{LANGUAGES[language].services1Bullet2}</li>
+                  <li>{LANGUAGES[language].services1Bullet3}</li>
+                  <li>{LANGUAGES[language].services1Bullet4}</li>
+                  <li>{LANGUAGES[language].services1Bullet5}</li>
+                  <li>{LANGUAGES[language].services1Bullet6}</li>
                 </ul>
                   </MKTypography>
               </MKBox>
@@ -206,7 +298,7 @@ function Presentation() {
                     mt={2}
                     mb={1.5}
                   >
-                    SERVICES 2
+                    {LANGUAGES[language].services2Title}
                   </MKTypography>
                   <MKTypography
                     display="block"
@@ -215,17 +307,14 @@ function Presentation() {
                     pr={6}
                     pl={0}
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat:
+                    {LANGUAGES[language].services2Text}
                 <ul style={{paddingLeft: '20px' }}>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li>{LANGUAGES[language].services2Bullet1}</li>
+                  <li>{LANGUAGES[language].services2Bullet2}</li>
+                  <li>{LANGUAGES[language].services2Bullet3}</li>
+                  <li>{LANGUAGES[language].services2Bullet4}</li>
+                  <li>{LANGUAGES[language].services2Bullet5}</li>
+                  <li>{LANGUAGES[language].services2Bullet6}</li>
                 </ul>
                   </MKTypography>
               </MKBox>              
@@ -263,7 +352,7 @@ function Presentation() {
                   >
                     Werkstrasse 12<br /> 
                     CH-5080 Laufenburg<br /> 
-                    Switzerland<br /> 
+                    {LANGUAGES[language].contactCountrySwitzerland}<br /> 
                     MwStNo.:CHE-464.171.623 MWST<br /> 
                     Tel: 0041628744070<br />
                     contact@innoveva.com<br />  
@@ -290,7 +379,7 @@ function Presentation() {
                   >
                     Siget 19<br /> 
                     10000 Zagreb<br /> 
-                    Croatia<br /> 
+                    {LANGUAGES[language].contactCountryCroatia}<br /> 
                     OIB:34782265468<br /> 
                     Tel: 00385996607564<br />
                     contact@innoveva.com<br /> 
