@@ -395,8 +395,8 @@ function Presentation() {
           </Grid>
         </Container>
         <Container id="referencesContainer"/>
-        <Counters />
-        <Testimonials />
+        <Counters currentlanguage={language} />
+        <Testimonials currentlanguage={language} />
         
       </Card>
         <Container id="contactContainer" sx={{ mt: 0, mb:3 }}>
