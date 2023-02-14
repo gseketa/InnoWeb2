@@ -22,6 +22,8 @@ import Divider from "@mui/material/Divider";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
+// prop-types is a library for typechecking of props.
+import PropTypes from "prop-types";
 
 // Images
 import appleLogo from "assets/images/logos/gray-logos/logo-apple.svg";
@@ -30,7 +32,27 @@ import nasaLogo from "assets/images/logos/gray-logos/logo-nasa.svg";
 import vodafoneLogo from "assets/images/logos/gray-logos/logo-vodafone.svg";
 import digitalOceanLogo from "assets/images/logos/gray-logos/logo-digitalocean.svg";
 
-function Information() {
+const LANGUAGES = {
+  english: {
+    firstText: 'Trusted by over',
+    secondText: '30+ companies', 
+    thirdText: 'Many Fortune 500 companies, startups, universities and governmental institutions love Innoveva services',
+  },
+  deutsch: {
+    firstText: 'Trusted by over',
+    secondText: '30+ companies', 
+    thirdText: 'Viele Fortune 500 companies, startups, universities and governmental institutions love Innoveva services',
+  },
+  hrvatski: {
+    firstText: 'Trusted by over',
+    secondText: '30+ companies', 
+    thirdText: 'Many Fortune 500 companies, startups, universities and governmental institutions love Innoveva services',
+  }
+};
+
+
+
+function Information({currentlanguage}) {
   return (
     <MKBox component="section" py={0}>
       <Container>
@@ -42,13 +64,12 @@ function Information() {
           justifyContent="center"
           sx={{ mx: "auto", textAlign: "center" }}
         >
-          <MKTypography variant="h2">Trusted by over</MKTypography>
+          <MKTypography variant="h2">{LANGUAGES[currentlanguage].firstText}</MKTypography>
           <MKTypography variant="h2" color="info" textGradient mb={2}>
-            &nbsp;30+ companies
+            &nbsp;{LANGUAGES[currentlanguage].secondText}
           </MKTypography>
           <MKTypography variant="body1" color="text" mb={2}>
-            Many Fortune 500 companies, startups, universities and governmental institutions love
-            Innoveva&apos;s services.
+            {LANGUAGES[currentlanguage].thirdText}
           </MKTypography>
         </Grid>
         <Divider sx={{ my: 3 }} />
@@ -79,5 +100,9 @@ function Information() {
     </MKBox>
   );
 }
+
+Information.propTypes = {
+  currentlanguage: PropTypes.string.isRequired,
+  };
 
 export default Information;

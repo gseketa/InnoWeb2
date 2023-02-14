@@ -396,7 +396,7 @@ function Presentation() {
         </Container>
         <Container id="referencesContainer"/>
         <Counters currentlanguage={language} />
-        <Testimonials />
+        <Testimonials currentlanguage={language} />
         
       </Card>
         <Container id="contactContainer" sx={{ mt: 0, mb:3 }}>
