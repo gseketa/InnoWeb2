@@ -40,6 +40,9 @@ import routes from "routes";
 import routesDE from "routesDE";
 import routesHR from "routesHR";
 
+// Icons
+import IconConsulting from "assets/images/IconConsulting.png";
+import IconEngineering from "assets/images/IconEngineering.png";
 
 // Images
 import bgImage from "assets/images/innMain3.jpg";
@@ -282,7 +285,7 @@ function Presentation() {
               <Grid item xs={12} lg={6}>
                 <DefaultInfoCard
                   direction="center"
-                  icon="apps"
+                  icon={<img src={IconConsulting} alt="Consulting icon" style={{ width: "45px", height: "40px" }}/>}
                   title={LANGUAGES[language].consultingTitle}
                   description={LANGUAGES[language].consultingText}
                 />
@@ -290,7 +293,7 @@ function Presentation() {
               <Grid item xs={12} lg={6}>
                 <DefaultInfoCard
                   direction="center"
-                  icon="engineering"
+                  icon={<img src={IconEngineering} alt="Engineering icon" style={{ width: "45px", height: "40px" }}/>}
                   title={LANGUAGES[language].engineeringTitle}
                   description={LANGUAGES[language].engineeringText}
                 />
