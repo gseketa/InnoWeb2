@@ -35,6 +35,11 @@ import DupontLogo from "assets/images/logos/customer-logos/Logo - Dupont.jpg";
 import EMSLogo from "assets/images/logos/customer-logos/Logo - EMS.jpg";
 import HZILogo from "assets/images/logos/customer-logos/Logo - HZI.jpg";
 import SiTecLogo from "assets/images/logos/customer-logos/Logo - Si-Tec.jpg";
+import OvivoLogo from "assets/images/logos/customer-logos/Logo - Ovivo.jpg";
+import SiemensLogo from "assets/images/logos/customer-logos/Logo - Siemens.jpg";
+import AlstomLogo from "assets/images/logos/customer-logos/Logo - Alstom.png";
+import STSILogo from "assets/images/logos/customer-logos/Logo - STSI.png";
+import MANLogo from "assets/images/logos/customer-logos/Logo - MAN.png";
 
 const LANGUAGES = {
   english: {
@@ -77,33 +82,48 @@ function Information({currentlanguage}) {
           </MKTypography>
         </Grid>
         <Divider sx={{ my: 3 }} />
-        <Grid container spacing={3} justifyContent="center">
+        <Grid container spacing={4} justifyContent="center" alignItems="center">
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={ABBLogo} alt="ABB" width="100%" opacity={0.6} />
+            <MKBox component="img" src={ABBLogo} alt="ABB" width="100%" opacity={1} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={BachemLogo} alt="Bachem" width="100%" opacity={0.6} />
+            <MKBox component="img" src={BachemLogo} alt="Bachem" width="100%" opacity={1} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={BASFLogo} alt="BASF" width="100%" opacity={0.6} />
+            <MKBox component="img" src={BASFLogo} alt="BASF" width="100%" opacity={1} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={CiechLogo} alt="Ciech" width="100%" opacity={0.6} />
+            <MKBox component="img" src={CiechLogo} alt="Ciech" width="100%" opacity={1} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={DottikonLogo} alt="Dottikon" width="100%" opacity={0.6} />
+            <MKBox component="img" src={DottikonLogo} alt="Dottikon" width="100%" opacity={1} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={DupontLogo} alt="Dupont" width="100%" opacity={0.6} />
+            <MKBox component="img" src={DupontLogo} alt="Dupont" width="100%" opacity={1} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={EMSLogo} alt="EMS" width="100%" opacity={0.6} />
+            <MKBox component="img" src={HZILogo} alt="HZI" width="100%" opacity={1} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={HZILogo} alt="HZI" width="100%" opacity={0.6} />
+            <MKBox component="img" src={EMSLogo} alt="EMS" width="100%" opacity={1} />
           </Grid>.
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={SiTecLogo} alt="SiTec" width="100%" opacity={0.6} />
+            <MKBox component="img" src={SiTecLogo} alt="SiTec" width="100%" opacity={1} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={OvivoLogo} alt="Ovivo" width="100%" opacity={1} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={SiemensLogo} alt="Siemens" width="100%" opacity={1} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={AlstomLogo} alt="Alstom" width="100%" opacity={1} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={STSILogo} alt="STSI" width="100%" opacity={1} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={MANLogo} alt="MAN" width="100%" opacity={1} />
           </Grid>
         </Grid>
       </Container>
