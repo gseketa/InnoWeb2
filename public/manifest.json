@@ -1,9 +1,9 @@
 {
-  "short_name": "Material Kit",
-  "name": "Material Kit 2 React",
+  "short_name": "Innoveva",
+  "name": "Innoveva",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "IN.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     }
