@@ -121,69 +121,88 @@ const LANGUAGES = {
      verschiedenen Quellen in eine einzige, geben wir 
      unseren Kunden die Möglichkeit, informierte Entscheidungen zu treffen und die 
      Leistung ihrer Anlagen zu optimieren.`,
-    services1Title: 'SERVICES 1',
-    services1Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat:`,
-    services1Bullet1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services1Bullet2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services1Bullet3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services1Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services1Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services1Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services1Bullet7: 'Electrical engineering',
-    services1Bullet8: 'I&C engineering',
-    services2Title: 'SERVICES 2',
-    services2Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat: `,
-    services2Bullet1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services2Bullet2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services2Bullet3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services2Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services2Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Title: 'INGENIEURDESIGN & PROJEKTMANAGEMENT',
+    services1Text: `Wir bieten Ingenieur-Design und Projektmanagement-Dienstleistungen 
+    für Investitionsprojekte sowie laufende Anlagenwartung und Baustellenunterstützung an. 
+    Unser Expertenteam verfügt über umfangreiche Erfahrung in der Ingenieur- und
+     Betriebsführung von Anlagen, die modernste Werkzeuge nutzen und internationale 
+     und nationale Normen einhalten. 
+     Mit unserem Team und einem breiten Netzwerk von Partnern können wir folgende 
+     Dienstleistungen anbieten:`,
+    services1Bullet1: 'Projektmanagement',
+    services1Bullet2: 'Projektüberwachung und -steuerung',
+    services1Bullet3: 'Verfahrenstechnik und -design',
+    services1Bullet4: 'Maschinenbau',
+    services1Bullet5: 'Anordnungs- und Rohrleitungsdesign',
+    services1Bullet6: 'Bauingenieurwesen',
+    services1Bullet7: 'Elektrotechnik',
+    services1Bullet8: 'I&C-Technik',
+    services2Title: 'DIGITALE ZWILLINGLÖSUNGEN',
+    services2Text: `Ein digitaler Zwilling ist ein virtuelles Modell physischer 
+    Vermögenswerte, das 2D- und 3D-Daten, Laserscans, Listen, Zeichnungen und Anlagenhistorie
+    zu einem einzigen Wahrheitspunkt konsolidiert, um einfachen Zugang zu Anlagendaten 
+    aus jeder Quelle zu ermöglichen. Durch die Ausrichtung der Dokumentation auf die 
+    tatsächlichen Anlagenbedingungen können Entscheidungsträger fundierte Entscheidungen 
+    auf der Grundlage genauer und aktueller Informationen treffen und letztendlich 
+    die Kluft zwischen den as-built (wie die Anlage gebaut wurde) und den 
+    as-dokumentierten (wie die Anlage gebaut werden sollte) Bedingungen schließen. 
+    Basierend auf unserer umfangreichen Erfahrung bei der Integration von Daten 
+    aus verschiedenen Anwendungen und Tools in digitale Zwilling-Lösungen können wir 
+    folgende Dienstleistungen anbieten:`,
+    services2Bullet1: 'Sammeln und Migration von bestehenden Dokumentationen und Daten',
+    services2Bullet2: 'Überprüfung und Aktualisierung von Anlagendaten und Aufdeckung potenzieller Daten- und Dokumentationslücken',
+    services2Bullet3: 'Verknüpfung von Daten und Dokumentation in einem einzigen virtuellen Modell',
+    services2Bullet4: 'Einsatz des digitalen Zwillings in täglichen Betriebsabläufen, Wartung und Projekten',
+    services2Bullet5: 'Coaching und Schulung von Kundenmitarbeitern und/oder Auftragnehmern',
     contactCountrySwitzerland: `Schweitz`,
     contactCountryCroatia: `Kroatien`,
   },
   hrvatski: {
     weAre: 'MI SMO',
     weAreText:`inženjerska tvrtka specijalizirana za upravljanje projektima, 
-    inženjerski dizajn i izradu digitalnih postrojenja`,
+    inženjerski dizajn i digitalizaciju postrojenja`,
     consultingTitle: 'INŽENJERING I UPRAVLJANJE PROJEKTIMA',
     consultingText: `Naše napredne usluge upravljanja projektima pokrivaju projekte svih veličina,
      od faze planiranja do konačne implementacije i održavanja. 
      Kao pouzdan isporučitelj i koordinator, pružamo multidisciplinarna inženjerska
       rješenja za energetska i procesna postrojenja.`,
-    engineeringTitle: 'DIGITALNA POSTROJENJA',
+    engineeringTitle: 'DIGITALIZACIJA POSTROJENJA',
     engineeringText: `Nastojimo našim klijentima pružiti potpunu kontrolu nad njihovim
     fizičkim resursima putem tehnologije digitalnih postrojenja. Konsolidirajući podatke
      i dokumentaciju iz različitih izvora u jedan pouzdan izvor, dajemo našim klijentima mogućnost 
      donošenja informiranih odluka i optimiziranja performansi svojih resursa i procesa.`,
-    services1Title: 'SERVICES 1',
-    services1Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat:`,
-    services1Bullet1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services1Bullet2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services1Bullet3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services1Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services1Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services1Bullet6: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services1Bullet7: 'Electrical engineering',
-    services1Bullet8: 'I&C engineering',
-    services2Title: 'SERVICES 2',
-    services2Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat: `,
-    services2Bullet1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services2Bullet2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services2Bullet3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services2Bullet4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    services2Bullet5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    services1Title: 'INŽENJERING I UPRAVLJANJE PROJEKTIMA',
+    services1Text: `Nudimo usluge inženjerskog projektiranja i upravljanja projektima 
+    za kapitalne projekte, 
+    kao i održavanje postrojenja i podršku u gradnji. 
+    Naš stručni tim ima dugogodišnje iskustvo u inženjerskom projektiranju
+    uz pridržavanje međunarodnim i nacionalnim normama te u
+     korištenju najmodernijih alata. S našim timom i širokom mrežom partnera 
+     možemo ponuditi sljedeće usluge:`,
+    services1Bullet1: 'Upravljanje projektima',
+    services1Bullet2: 'Nadzor i kontrola projekata',
+    services1Bullet3: 'Procesno inženjerstvo',
+    services1Bullet4: 'Strojarsko inženjerstvo',
+    services1Bullet5: 'Projektiranje cjevovoda',
+    services1Bullet6: 'Građevinski inženjering',
+    services1Bullet7: 'Elektrotehnika',
+    services1Bullet8: 'Instrumentacija i kontrola',
+    services2Title: 'DIGITALIZACIJA POSTROJENJA',
+    services2Text: `Digitalno postrojenje je virtualni model fizičkih resursa
+    koji međusobno povezuje 2D i 3D podatke, laserske skenove, liste i nacrte čime
+    se ostvaruje mogućnost za pristup svim podacima iz jednog izvora. 
+    Nakon usklađivanja dokumentacije sa stvarnim 
+    stanjem resursa, moguće je donositi informirane odluke na temelju točnih 
+    i ažuriranih informacija. Time se konačno premošćuje problem u razlikama između "as-built" 
+    (kako je postrojenje izgrađeno) i "as-documented" (kako je postrojenje trebalo biti izgrađeno) 
+    dokumentacija. Na temelju našeg opsežnog iskustva s integracijom podataka iz 
+    različitih klijentskih aplikacija i alata u digitalna postrojenja, 
+    u mogućnosti smo pružiti sljedeće usluge:`,
+    services2Bullet1: 'Prikupljanje i migracija postojeće dokumentacije i podataka',
+    services2Bullet2: 'Pregled i ažuriranje podataka o resursima i otkrivanje mogućih nedostataka u podacima i dokumentaciji',
+    services2Bullet3: 'Povezivanje podataka i dokumentacije u jednom virtualnom modelu',
+    services2Bullet4: 'Uvođenje digitalnog postrojenja u upotrebu prema potrebama klijenta',
+    services2Bullet5: 'Obuka za korištenje digitalnog postrojenja ',
     contactCountrySwitzerland: `Švicarska`,
     contactCountryCroatia: `Hrvatska`,
   }

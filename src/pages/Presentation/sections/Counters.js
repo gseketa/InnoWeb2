@@ -29,28 +29,28 @@ import PropTypes from "prop-types";
 
 const LANGUAGES = {
   english: {
-    firstTitle: 'Years on the market',
-    firstText: 'Providing high quality services to our customers',
+    firstTitle: 'Years',
+    firstText: 'of successful industry experience',
     secondTitle: 'Experts',
-    secondText: 'With experience in various projects',
+    secondText: 'dedicated to customer satisfaction',
     thirdTitle: 'Projects',
-    thirdText: 'For different industries all around the globe',
+    thirdText: 'executed with excellence',
   },
   deutsch: {
-    firstTitle: 'Jaren auf dem Markt',
-    firstText: 'Providing high quality services to our customers',
-    secondTitle: 'Experts',
-    secondText: 'With experience in various projects',
-    thirdTitle: 'Projects',
-    thirdText: 'For different industries all around the globe',
+    firstTitle: 'Jaren',
+    firstText: 'mit erfolgreicher Branchenerfahrung',
+    secondTitle: 'Experten',
+    secondText: 'engagiert für Kundenzufriedenheit',
+    thirdTitle: 'Projekten',
+    thirdText: 'ausgeführt mit Exzellenz',
   },
   hrvatski: {
-    firstTitle: 'Years on the market',
-    firstText: 'Providing high quality services to our customers',
-    secondTitle: 'Experts',
-    secondText: 'With experience in various projects',
-    thirdTitle: 'Projects',
-    thirdText: 'For different industries all around the globe',
+    firstTitle: 'Godina',
+    firstText: 'uspješnog iskustva u industriji',
+    secondTitle: 'Stručnjaka',
+    secondText: 'posvećenih zadovoljstvu klijenata',
+    thirdTitle: 'Projekata',
+    thirdText: 'izvedenih s izvrsnošću',
   }
 };
 
@@ -70,7 +70,7 @@ function Counters({currentlanguage}) {
           <Grid item xs={12} md={4} display="flex">
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
             <DefaultCounterCard
-              count={30}
+              count={25}
               title={LANGUAGES[currentlanguage].secondTitle}
               description={LANGUAGES[currentlanguage].secondText}
             />
@@ -78,7 +78,7 @@ function Counters({currentlanguage}) {
           </Grid>
           <Grid item xs={12} md={4}>
             <DefaultCounterCard
-              count={70}
+              count={250}
               suffix="+"
               title={LANGUAGES[currentlanguage].thirdTitle}
               description={LANGUAGES[currentlanguage].thirdText}

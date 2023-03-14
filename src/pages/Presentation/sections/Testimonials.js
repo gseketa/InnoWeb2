@@ -26,27 +26,31 @@ import MKTypography from "components/MKTypography";
 import PropTypes from "prop-types";
 
 // Images
-import appleLogo from "assets/images/logos/gray-logos/logo-apple.svg";
-import facebookLogo from "assets/images/logos/gray-logos/logo-facebook.svg";
-import nasaLogo from "assets/images/logos/gray-logos/logo-nasa.svg";
-import vodafoneLogo from "assets/images/logos/gray-logos/logo-vodafone.svg";
-import digitalOceanLogo from "assets/images/logos/gray-logos/logo-digitalocean.svg";
+import ABBLogo from "assets/images/logos/customer-logos/Logo - ABB.jpg";
+import BachemLogo from "assets/images/logos/customer-logos/Logo - Bachem.jpg";
+import BASFLogo from "assets/images/logos/customer-logos/Logo - BASF.jpg";
+import CiechLogo from "assets/images/logos/customer-logos/Logo - Ciech.jpg";
+import DottikonLogo from "assets/images/logos/customer-logos/Logo - Dottikon.jpg";
+import DupontLogo from "assets/images/logos/customer-logos/Logo - Dupont.jpg";
+import EMSLogo from "assets/images/logos/customer-logos/Logo - EMS.jpg";
+import HZILogo from "assets/images/logos/customer-logos/Logo - HZI.jpg";
+import SiTecLogo from "assets/images/logos/customer-logos/Logo - Si-Tec.jpg";
 
 const LANGUAGES = {
   english: {
     firstText: 'Trusted by over',
     secondText: '30+ companies', 
-    thirdText: 'Many Fortune 500 companies, startups, universities and governmental institutions love Innoveva services',
+    thirdText: 'in the chemical, petrochemical, mining, power and pharmaceutical industry',
   },
   deutsch: {
-    firstText: 'Trusted by over',
-    secondText: '30+ companies', 
-    thirdText: 'Viele Fortune 500 companies, startups, universities and governmental institutions love Innoveva services',
+    firstText: 'Vertraut von über',
+    secondText: '30+ Unternehmen', 
+    thirdText: 'in der Chemie-, Petrochemie-, Bergbau-, Energie- und Pharmaindustrie',
   },
   hrvatski: {
-    firstText: 'Trusted by over',
-    secondText: '30+ companies', 
-    thirdText: 'Many Fortune 500 companies, startups, universities and governmental institutions love Innoveva services',
+    firstText: 'Pouzdan izbor za više od',
+    secondText: '30+ poduzeća', 
+    thirdText: 'u kemijskoj, petrokemijskoj, rudarskoj, energetskoj i farmaceutskoj industriji',
   }
 };
 
@@ -75,25 +79,31 @@ function Information({currentlanguage}) {
         <Divider sx={{ my: 3 }} />
         <Grid container spacing={3} justifyContent="center">
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={appleLogo} alt="Apple" width="100%" opacity={0.6} />
+            <MKBox component="img" src={ABBLogo} alt="ABB" width="100%" opacity={0.6} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={facebookLogo} alt="Facebook" width="100%" opacity={0.6} />
+            <MKBox component="img" src={BachemLogo} alt="Bachem" width="100%" opacity={0.6} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={nasaLogo} alt="Nasa" width="100%" opacity={0.6} />
+            <MKBox component="img" src={BASFLogo} alt="BASF" width="100%" opacity={0.6} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={vodafoneLogo} alt="Vodafone" width="100%" opacity={0.6} />
+            <MKBox component="img" src={CiechLogo} alt="Ciech" width="100%" opacity={0.6} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox
-              component="img"
-              src={digitalOceanLogo}
-              alt="DigitalOcean"
-              width="100%"
-              opacity={0.6}
-            />
+            <MKBox component="img" src={DottikonLogo} alt="Dottikon" width="100%" opacity={0.6} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={DupontLogo} alt="Dupont" width="100%" opacity={0.6} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={EMSLogo} alt="EMS" width="100%" opacity={0.6} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={HZILogo} alt="HZI" width="100%" opacity={0.6} />
+          </Grid>.
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={SiTecLogo} alt="SiTec" width="100%" opacity={0.6} />
           </Grid>
         </Grid>
       </Container>
