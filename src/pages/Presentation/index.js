@@ -282,7 +282,7 @@ function Presentation() {
         </Container>
       </MKBox>
 
-        <MKBox style={{ paddingTop: "30px", paddingBottom: "80px"}} >
+        <MKBox style={{backgroundColor: "#ebebeb", paddingTop: "30px", paddingBottom: "80px"}} >
         <Container >
             <Grid container spacing={2} >
               <Grid item xs={12} lg={6}>
