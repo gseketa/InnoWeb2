@@ -56,6 +56,7 @@ DefaultCounterCard.propTypes = {
     "primary",
     "secondary",
     "info",
+    "info2",
     "success",
     "warning",
     "error",

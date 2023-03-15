@@ -59,6 +59,11 @@ export default {
     focus: "#1662C4",
   },
 
+  info2: {
+    main: "#1d4099",
+    focus: "#1662C4",
+  },
+
   success: {
     main: "#4CAF50",
     focus: "#67bb6a",

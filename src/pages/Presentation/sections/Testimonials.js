@@ -13,6 +13,8 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+/* eslint-disable */
+
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -37,9 +39,9 @@ import HZILogo from "assets/images/logos/customer-logos/Logo - HZI.jpg";
 import SiTecLogo from "assets/images/logos/customer-logos/Logo - Si-Tec.jpg";
 import OvivoLogo from "assets/images/logos/customer-logos/Logo - Ovivo.jpg";
 import SiemensLogo from "assets/images/logos/customer-logos/Logo - Siemens.jpg";
-import AlstomLogo from "assets/images/logos/customer-logos/Logo - Alstom.png";
-import STSILogo from "assets/images/logos/customer-logos/Logo - STSI.png";
-import MANLogo from "assets/images/logos/customer-logos/Logo - MAN.png";
+// import AlstomLogo from "assets/images/logos/customer-logos/Logo - Alstom.png";
+// import STSILogo from "assets/images/logos/customer-logos/Logo - STSI.png";
+// import MANLogo from "assets/images/logos/customer-logos/Logo - MAN.png";
 
 const LANGUAGES = {
   english: {
@@ -116,7 +118,8 @@ function Information({currentlanguage}) {
           <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={SiemensLogo} alt="Siemens" width="100%" opacity={1} />
           </Grid>
-          <Grid item xs={6} md={4} lg={2}>
+
+{/*          <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={AlstomLogo} alt="Alstom" width="100%" opacity={1} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
@@ -124,7 +127,8 @@ function Information({currentlanguage}) {
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={MANLogo} alt="MAN" width="100%" opacity={1} />
-          </Grid>
+          </Grid>*/}
+
         </Grid>
       </Container>
     </MKBox>
