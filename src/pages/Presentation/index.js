@@ -256,7 +256,7 @@ function Presentation() {
                 variant="h1"
                 color="white"
                 textAlign="right"
-                mt={-6}
+                mt={0}
                 mb={1}
                 sx={({ breakpoints, typography: { size } }) => ({
                   [breakpoints.down("md")]: {
@@ -279,9 +279,9 @@ function Presentation() {
         </Container>
       </MKBox>
 
-        <MKBox style={{ backgroundColor: "#ebebeb" }}>
+        <MKBox style={{ backgroundColor: "#ebebeb", paddingBottom: "80px"}} >
         <Container >
-            <Grid container spacing={2}>
+            <Grid container spacing={2} >
               <Grid item xs={12} lg={6}>
                 <DefaultInfoCard
                   direction="center"
@@ -306,7 +306,7 @@ function Presentation() {
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
-          mt: 0,
+          mt: -8,
           mb: 4,
           backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
           backdropFilter: "saturate(200%) blur(30px)",
