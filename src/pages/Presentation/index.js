@@ -279,7 +279,8 @@ function Presentation() {
         </Container>
       </MKBox>
 
-        <Container style={{ backgroundColor: "#ebebeb" }}>
+        <MKBox style={{ backgroundColor: "#ebebeb" }}>
+        <Container >
             <Grid container spacing={2}>
               <Grid item xs={12} lg={6}>
                 <DefaultInfoCard
@@ -299,6 +300,7 @@ function Presentation() {
               </Grid>
             </Grid>
           </Container>
+          </MKBox>
 
       <Card
         sx={{
