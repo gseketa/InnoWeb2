@@ -70,12 +70,13 @@ const LANGUAGES = {
     into a single, reliable source of truth, we empower our customers 
     to make informed decisions and optimize their asset performance.`,
     services1Title: 'ENGINEERING & PROJECT MANAGEMENT',
-    services1Text: `We offer engineering design and project management services 
+    services1Text1: `We offer engineering design and project management services 
     for capital projects, as well as ongoing plant maintenance 
       and construction support. Our expert team has vast experience 
     in plant facility engineering and operation, using state-of-the-art tools 
-    and complying with international and national norms. 
-    With our team and a wide network of partners we can offer the following services:`,
+    and complying with international and national norms. `,
+    services1Text2: `With our team and a wide network of partners we can offer 
+    the following services:`,
     services1Bullet1: 'Project management',
     services1Bullet2: 'Project monitoring and control',
     services1Bullet3: 'Process engineering and design',
@@ -85,14 +86,14 @@ const LANGUAGES = {
     services1Bullet7: 'Electrical engineering',
     services1Bullet8: 'I&C engineering',
     services2Title: 'DIGITAL TWIN SOLUTIONS',
-    services2Text: `A digital twin is a virtual model of physical assets 
+    services2Text1: `A digital twin is a virtual model of physical assets 
     that consolidates 2D and 3D data, laser scans, lists, drawings, and asset 
     history into a single point of truth for easy access to asset data from any source.
     By aligning documentation with the actual asset conditions, 
     stakeholders can make informed decisions based on accurate and up-to-date information, 
     ultimately closing the gap between the as-built (how the asset was constructed) 
-    and as-documented (how the asset was supposed to be constructed) conditions. 
-    Based on our extensive experience with integrating data 
+    and as-documented (how the asset was supposed to be constructed) conditions. `,
+    services2Text2: `Based on our extensive experience with integrating data 
     from various applications and tools into digital twin solutions, we are capable to provide 
     the following services:`,
     services2Bullet1: 'Collecting and migrating existing documentation and data',
@@ -122,13 +123,13 @@ const LANGUAGES = {
      unseren Kunden die Möglichkeit, informierte Entscheidungen zu treffen und die 
      Leistung ihrer Anlagen zu optimieren.`,
     services1Title: 'INGENIEURDESIGN & PROJEKTMANAGEMENT',
-    services1Text: `Wir bieten Ingenieur-Design und Projektmanagement-Dienstleistungen 
+    services1Text1: `Wir bieten Ingenieur-Design und Projektmanagement-Dienstleistungen 
     für Investitionsprojekte sowie laufende Anlagenwartung und Baustellenunterstützung an. 
     Unser Expertenteam verfügt über umfangreiche Erfahrung in der Ingenieur- und
-     Betriebsführung von Anlagen, die modernste Werkzeuge nutzen und internationale 
-     und nationale Normen einhalten. 
-     Mit unserem Team und einem breiten Netzwerk von Partnern können wir folgende 
-     Dienstleistungen anbieten:`,
+    Betriebsführung von Anlagen, die modernste Werkzeuge nutzen und internationale 
+    und nationale Normen einhalten.`,
+    services1Text2: `Mit unserem Team und einem breiten Netzwerk von Partnern können wir folgende 
+    Dienstleistungen anbieten:`,
     services1Bullet1: 'Projektmanagement',
     services1Bullet2: 'Projektüberwachung und -steuerung',
     services1Bullet3: 'Verfahrenstechnik und -design',
@@ -138,15 +139,15 @@ const LANGUAGES = {
     services1Bullet7: 'Elektrotechnik',
     services1Bullet8: 'I&C-Technik',
     services2Title: 'DIGITALE ZWILLINGLÖSUNGEN',
-    services2Text: `Ein digitaler Zwilling ist ein virtuelles Modell physischer 
+    services2Text1: `Ein digitaler Zwilling ist ein virtuelles Modell physischer 
     Vermögenswerte, das 2D- und 3D-Daten, Laserscans, Listen, Zeichnungen und Anlagenhistorie
     zu einem einzigen Wahrheitspunkt konsolidiert, um einfachen Zugang zu Anlagendaten 
     aus jeder Quelle zu ermöglichen. Durch die Ausrichtung der Dokumentation auf die 
     tatsächlichen Anlagenbedingungen können Entscheidungsträger fundierte Entscheidungen 
     auf der Grundlage genauer und aktueller Informationen treffen und letztendlich 
     die Kluft zwischen den as-built (wie die Anlage gebaut wurde) und den 
-    as-dokumentierten (wie die Anlage gebaut werden sollte) Bedingungen schließen. 
-    Basierend auf unserer umfangreichen Erfahrung bei der Integration von Daten 
+    as-dokumentierten (wie die Anlage gebaut werden sollte) Bedingungen schließen.`,
+    services2Text2: `Basierend auf unserer umfangreichen Erfahrung bei der Integration von Daten 
     aus verschiedenen Anwendungen und Tools in digitale Zwilling-Lösungen können wir 
     folgende Dienstleistungen anbieten:`,
     services2Bullet1: 'Sammeln und Migration von bestehenden Dokumentationen und Daten',
@@ -172,13 +173,14 @@ const LANGUAGES = {
      i dokumentaciju iz različitih izvora u jedan pouzdan izvor, dajemo našim klijentima mogućnost 
      donošenja informiranih odluka i optimiziranja performansi svojih resursa i procesa.`,
     services1Title: 'INŽENJERING I UPRAVLJANJE PROJEKTIMA',
-    services1Text: `Nudimo usluge inženjerskog projektiranja i upravljanja projektima 
+    services1Text1: `Nudimo usluge inženjerskog projektiranja i upravljanja projektima 
     za kapitalne projekte, 
     kao i održavanje postrojenja i podršku u gradnji. 
     Naš stručni tim ima dugogodišnje iskustvo u inženjerskom projektiranju
     uz pridržavanje međunarodnim i nacionalnim normama te u
-     korištenju najmodernijih alata. S našim timom i širokom mrežom partnera 
-     možemo ponuditi sljedeće usluge:`,
+    korištenju najmodernijih alata.`,
+    services1Text2: `S našim timom i širokom mrežom partnera 
+    možemo ponuditi sljedeće usluge:`,
     services1Bullet1: 'Upravljanje projektima',
     services1Bullet2: 'Nadzor i kontrola projekata',
     services1Bullet3: 'Procesno inženjerstvo',
@@ -188,14 +190,15 @@ const LANGUAGES = {
     services1Bullet7: 'Elektrotehnika',
     services1Bullet8: 'Instrumentacija i kontrola',
     services2Title: 'DIGITALIZACIJA POSTROJENJA',
-    services2Text: `Digitalno postrojenje je virtualni model fizičkih resursa
+    services2Text1: `Digitalno postrojenje je virtualni model fizičkih resursa
     koji međusobno povezuje 2D i 3D podatke, laserske skenove, liste i nacrte čime
     se ostvaruje mogućnost za pristup svim podacima iz jednog izvora. 
     Nakon usklađivanja dokumentacije sa stvarnim 
     stanjem resursa, moguće je donositi informirane odluke na temelju točnih 
     i ažuriranih informacija. Time se konačno premošćuje problem u razlikama između "as-built" 
     (kako je postrojenje izgrađeno) i "as-documented" (kako je postrojenje trebalo biti izgrađeno) 
-    dokumentacija. Na temelju našeg opsežnog iskustva s integracijom podataka iz 
+    dokumentacija.`,
+    services2Text2: `Na temelju našeg opsežnog iskustva s integracijom podataka iz 
     različitih klijentskih aplikacija i alata u digitalna postrojenja, 
     u mogućnosti smo pružiti sljedeće usluge:`,
     services2Bullet1: 'Prikupljanje i migracija postojeće dokumentacije i podataka',
@@ -279,7 +282,7 @@ function Presentation() {
         </Container>
       </MKBox>
 
-        <MKBox style={{ backgroundColor: "#ebebeb", paddingBottom: "80px"}} >
+        <MKBox style={{ paddingBottom: "80px"}} >
         <Container >
             <Grid container spacing={2} >
               <Grid item xs={12} lg={6}>
@@ -339,7 +342,8 @@ function Presentation() {
                     pr={6}
                     pl={0}
                   >
-                    {LANGUAGES[language].services1Text}
+                    {LANGUAGES[language].services1Text1}<br /> 
+                    {LANGUAGES[language].services1Text2}
                 <ul style={{paddingLeft: '20px' }}>
                   <li>{LANGUAGES[language].services1Bullet1}</li>
                   <li>{LANGUAGES[language].services1Bullet2}</li>
@@ -375,7 +379,8 @@ function Presentation() {
                     pr={6}
                     pl={0}
                   >
-                    {LANGUAGES[language].services2Text}
+                    {LANGUAGES[language].services2Text1}<br /> 
+                    {LANGUAGES[language].services2Text2}
                 <ul style={{paddingLeft: '20px' }}>
                   <li>{LANGUAGES[language].services2Bullet1}</li>
                   <li>{LANGUAGES[language].services2Bullet2}</li>
@@ -391,7 +396,7 @@ function Presentation() {
             </Grid>
           </Grid>
         </Container>
-        <Container id="referencesContainer" sx={{ mt: 0, mb:5 }}>
+        <Container id="referencesContainer" sx={{ mt: 3, mb:5 }}>
         <Counters currentlanguage={language} />
         <Testimonials currentlanguage={language} />
         </Container>
