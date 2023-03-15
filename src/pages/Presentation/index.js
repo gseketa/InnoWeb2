@@ -45,7 +45,7 @@ import IconConsulting from "assets/images/IconConsulting.png";
 import IconEngineering from "assets/images/IconEngineering.png";
 
 // Images
-import bgImage from "assets/images/innMain3.jpg";
+import bgImage from "assets/images/innMain3.png";
 import innserv1 from "assets/images/innserv1.jpg";
 import innserv2 from "assets/images/innserv2.jpg";
 
@@ -254,6 +254,7 @@ function Presentation() {
             <Grid item xs={12} lg={4} justifyContent="flex-end" mx="auto">
               <MKTypography
                 variant="h1"
+                color="white"
                 textAlign="right"
                 mt={-6}
                 mb={1}
@@ -267,7 +268,7 @@ function Presentation() {
               </MKTypography>
               <MKTypography
                 variant="body1"
-                color="text"
+                color="white"
                 textAlign="right"
                 mt={1}
               >
