@@ -282,7 +282,7 @@ function Presentation() {
         </Container>
       </MKBox>
 
-        <MKBox style={{ paddingBottom: "80px"}} >
+        <MKBox style={{ paddingTop: "30px", paddingBottom: "80px"}} >
         <Container >
             <Grid container spacing={2} >
               <Grid item xs={12} lg={6}>
@@ -396,7 +396,7 @@ function Presentation() {
             </Grid>
           </Grid>
         </Container>
-        <Container id="referencesContainer" sx={{ mt: 3, mb:5 }}>
+        <Container id="referencesContainer" sx={{ mt: 5, mb:5 }}>
         <Counters currentlanguage={language} />
         <Testimonials currentlanguage={language} />
         </Container>
