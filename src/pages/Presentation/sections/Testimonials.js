@@ -50,7 +50,7 @@ const LANGUAGES = {
     thirdText: 'in the chemical, petrochemical, mining, power and pharmaceutical industry',
   },
   deutsch: {
-    firstText: 'Vertraut von über',
+    firstText: 'Vertrauen von über',
     secondText: '30+ Unternehmen', 
     thirdText: 'in der Chemie-, Petrochemie-, Bergbau-, Energie- und Pharmaindustrie',
   },

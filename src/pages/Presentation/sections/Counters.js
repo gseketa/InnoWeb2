@@ -37,11 +37,11 @@ const LANGUAGES = {
     thirdText: 'executed with excellence',
   },
   deutsch: {
-    firstTitle: 'Jaren',
-    firstText: 'mit erfolgreicher Branchenerfahrung',
+    firstTitle: 'Jahre',
+    firstText: 'erfolgreiche Branchenerfahrung',
     secondTitle: 'Experten',
-    secondText: 'engagiert für Kundenzufriedenheit',
-    thirdTitle: 'Projekten',
+    secondText: 'der Kundenzufriedenheit verschrieben',
+    thirdTitle: 'Projekte',
     thirdText: 'ausgeführt mit Exzellenz',
   },
   hrvatski: {

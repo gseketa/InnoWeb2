@@ -107,27 +107,26 @@ const LANGUAGES = {
   deutsch: {
     weAre: 'WIR SIND',
     weAreText:`ein Ingenieursunternehmen, das sich auf Projektmanagement, 
-    Ingenieurdesign und digitale Zwillinglösungen spezialisiert hat.`,
-    consultingTitle: 'INGENIEURDESIGN & PROJEKTMANAGEMENT', 
-    consultingText: `Unsere hochmodernen Projektmanagement-Dienstleistungen decken 
+    Ingenieursdesign und digitale Zwilling-Lösungen spezialisiert hat.`,
+    consultingTitle: 'INGENIEURSDESIGN & PROJEKTMANAGEMENT', 
+    consultingText: `Unsere hochmodernen Projektmanagementdienstleistungen decken 
     Projekte jeder Größe von der detaillierten Planung bis zur 
     erfolgreichen Ausführung und darüber hinaus ab. 
     Als zuverlässiger Lieferant und effizienter Koordinator bieten 
     wir zudem maßgeschneiderte multidisziplinäre Engineering-Lösungen für die 
     optimale Leistung von Kraftwerken und Prozessanlagen.`, 
-    engineeringTitle: 'DIGITALE ZWILLINGLÖSUNGEN',
+    engineeringTitle: 'DIGITALE ZWILLING-LÖSUNGEN',
     engineeringText: `Wir streben danach, unseren Kunden durch die Kraft der digitalen
      Zwillingstechnologie eine vollständige Kontrolle über ihre physischen 
      Anlagen zu bieten. Durch die Konsolidierung von Daten und Dokumenten aus 
      verschiedenen Quellen in eine einzige, geben wir 
-     unseren Kunden die Möglichkeit, informierte Entscheidungen zu treffen und die 
+     unseren Kunden die Möglichkeit, fundierte Entscheidungen zu treffen und die 
      Leistung ihrer Anlagen zu optimieren.`,
-    services1Title: 'INGENIEURDESIGN & PROJEKTMANAGEMENT',
-    services1Text1: `Wir bieten Ingenieur-Design und Projektmanagement-Dienstleistungen 
+    services1Title: 'INGENIEURSDESIGN & PROJEKTMANAGEMENT',
+    services1Text1: `Wir bieten Ingenieur-Design und Projektmanagementdienstleistungen 
     für Investitionsprojekte sowie laufende Anlagenwartung und Baustellenunterstützung an. 
-    Unser Expertenteam verfügt über umfangreiche Erfahrung in der Ingenieur- und
-    Betriebsführung von Anlagen, die modernste Werkzeuge nutzen und internationale 
-    und nationale Normen einhalten.`,
+    Unser Expertenteam verfügt über umfangreiche Erfahrung in der Anlagentechnik und im Anlagenbetrieb, 
+    unter Verwendung modernster Werkzeuge und Erfüllung internationaler sowie nationaler Normen.`,
     services1Text2: `Mit unserem Team und einem breiten Netzwerk von Partnern können wir folgende 
     Dienstleistungen anbieten:`,
     services1Bullet1: 'Projektmanagement',
@@ -137,21 +136,21 @@ const LANGUAGES = {
     services1Bullet5: 'Anordnungs- und Rohrleitungsdesign',
     services1Bullet6: 'Bauingenieurwesen',
     services1Bullet7: 'Elektrotechnik',
-    services1Bullet8: 'I&C-Technik',
-    services2Title: 'DIGITALE ZWILLINGLÖSUNGEN',
-    services2Text1: `Ein digitaler Zwilling ist ein virtuelles Modell physischer 
-    Vermögenswerte, das 2D- und 3D-Daten, Laserscans, Listen, Zeichnungen und Anlagenhistorie
-    zu einem einzigen Wahrheitspunkt konsolidiert, um einfachen Zugang zu Anlagendaten 
-    aus jeder Quelle zu ermöglichen. Durch die Ausrichtung der Dokumentation auf die 
-    tatsächlichen Anlagenbedingungen können Entscheidungsträger fundierte Entscheidungen 
-    auf der Grundlage genauer und aktueller Informationen treffen und letztendlich 
-    die Kluft zwischen den as-built (wie die Anlage gebaut wurde) und den 
-    as-dokumentierten (wie die Anlage gebaut werden sollte) Bedingungen schließen.`,
-    services2Text2: `Basierend auf unserer umfangreichen Erfahrung bei der Integration von Daten 
-    aus verschiedenen Anwendungen und Tools in digitale Zwilling-Lösungen können wir 
-    folgende Dienstleistungen anbieten:`,
-    services2Bullet1: 'Sammeln und Migration von bestehenden Dokumentationen und Daten',
-    services2Bullet2: 'Überprüfung und Aktualisierung von Anlagendaten und Aufdeckung potenzieller Daten- und Dokumentationslücken',
+    services1Bullet8: 'Mess- und Regeltechnik',
+    services2Title: 'DIGITALE ZWILLING-LÖSUNGEN',
+    services2Text1: `Ein digitaler Zwilling ist ein virtuelles Modell 
+    physischer Anlagen, das 2D- und 3D-Daten, Laserscans, Listen, Zeichnungen 
+    und Anlagenhistorie konsolidiert und somit Zugriff auf Anlagendaten jeder 
+    Quelle ermöglicht. Durch die Ausrichtung der Dokumentation auf die tatsächlichen 
+    Anlagenbedingungen können Entscheidungsträger fundierte Entscheidungen auf der Grundlage 
+    genauer und aktueller Informationen treffen und letztendlich die Kluft zwischen den 
+    As-built-Bedingungen (wie die Anlage gebaut wurde) und den As-documented-Bedingungen 
+    (wie die Anlage gebaut werden sollte) schließen.`,
+    services2Text2: `Basierend auf unserer umfangreichen Erfahrung bei der 
+    Integration von Daten aus verschiedenen Anwendungen und Tools 
+    in digitale Zwilling-Lösungen können wir folgende Dienstleistungen anbieten:`,
+    services2Bullet1: 'Sammeln und Migration bestehender Dokumentation und Daten',
+    services2Bullet2: 'Überprüfen und Aktualisieren von Anlagendaten und Aufdecken potenzieller Daten- und Dokumentationslücken',
     services2Bullet3: 'Verknüpfung von Daten und Dokumentation in einem einzigen virtuellen Modell',
     services2Bullet4: 'Einsatz des digitalen Zwillings in täglichen Betriebsabläufen, Wartung und Projekten',
     services2Bullet5: 'Coaching und Schulung von Kundenmitarbeitern und/oder Auftragnehmern',
@@ -426,7 +425,7 @@ function Presentation() {
                     Werkstrasse 12<br /> 
                     CH-5080 Laufenburg<br /> 
                     {LANGUAGES[language].contactCountrySwitzerland}<br /> 
-                    MwStNo.:CHE-464.171.623 MWST<br /> 
+                    UID: CHE-464.171.623<br /> 
                     Tel: 0041628744070<br />
                     info@innoveva.com<br />  
                   </MKTypography>
@@ -453,7 +452,7 @@ function Presentation() {
                     Siget 19<br /> 
                     10000 Zagreb<br /> 
                     {LANGUAGES[language].contactCountryCroatia}<br /> 
-                    OIB:34782265468<br /> 
+                    OIB: 34782265468<br /> 
                     Tel: 00385916114662<br />
                     info@innoveva.com<br /> 
                   </MKTypography>
@@ -468,7 +467,7 @@ function Presentation() {
                     pr={0}
                     pl={0}
                   >
-                    All rights reserved. Copyright &copy; {date} Innoveva GmbH
+                    All rights reserved. Copyright &copy; Innoveva GmbH {date} 
                   </MKTypography>
           </Grid>
         </Container>
