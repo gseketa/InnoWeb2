@@ -279,19 +279,7 @@ function Presentation() {
         </Container>
       </MKBox>
 
-      <Card
-        sx={{
-          p: 2,
-          mx: { xs: 2, lg: 3 },
-          mt: -8,
-          mb: 4,
-          backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
-          backdropFilter: "saturate(200%) blur(30px)",
-          boxShadow: ({ boxShadows: { xxl } }) => xxl,
-        }}
-      >
-
-        <Container>
+        <Container style={{ backgroundColor: "#ebebeb" }}>
             <Grid container spacing={2}>
               <Grid item xs={12} lg={6}>
                 <DefaultInfoCard
@@ -311,6 +299,20 @@ function Presentation() {
               </Grid>
             </Grid>
           </Container>
+
+      <Card
+        sx={{
+          p: 2,
+          mx: { xs: 2, lg: 3 },
+          mt: 0,
+          mb: 4,
+          backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
+          backdropFilter: "saturate(200%) blur(30px)",
+          boxShadow: ({ boxShadows: { xxl } }) => xxl,
+        }}
+      >
+
+
 
         <Container sx={{ mt: 10 }}>
           <Grid container spacing={2}>

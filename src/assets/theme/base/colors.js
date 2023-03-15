@@ -60,7 +60,7 @@ export default {
   },
 
   info2: {
-    main: "#1d4099",
+    main: "#ebebeb",
     focus: "#1662C4",
   },
 
