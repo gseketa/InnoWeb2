@@ -123,7 +123,7 @@ const LANGUAGES = {
      unseren Kunden die Möglichkeit, fundierte Entscheidungen zu treffen und die 
      Leistung ihrer Anlagen zu optimieren.`,
     services1Title: 'INGENIEURSDESIGN & PROJEKTMANAGEMENT',
-    services1Text1: `Wir bieten Ingenieur-Design und Projektmanagementdienstleistungen 
+    services1Text1: `Wir bieten Ingenieursdesign und Projektmanagementdienstleistungen 
     für Investitionsprojekte sowie laufende Anlagenwartung und Baustellenunterstützung an. 
     Unser Expertenteam verfügt über umfangreiche Erfahrung in der Anlagentechnik und im Anlagenbetrieb, 
     unter Verwendung modernster Werkzeuge und Erfüllung internationaler sowie nationaler Normen.`,
