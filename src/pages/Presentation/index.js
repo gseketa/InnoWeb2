@@ -423,7 +423,7 @@ function Presentation() {
                     pl={0}
                   >
                     Werkstrasse 12<br /> 
-                    CH-5080 Laufenburg<br /> 
+                    5080 Laufenburg<br /> 
                     {LANGUAGES[language].contactCountrySwitzerland}<br /> 
                     UID: CHE-464.171.623<br /> 
                     Tel: 0041628744070<br />
