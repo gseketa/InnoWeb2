@@ -47,7 +47,7 @@ import IconEngineering from "assets/images/IconEngineering.png";
 // Images
 import bgImage from "assets/images/innMain3.png";
 import innserv1 from "assets/images/innserv1.jpg";
-import innserv2 from "assets/images/innserv2.jpg";
+import innserv2 from "assets/images/innserv2.png";
 
 const date = new Date().getFullYear();
 
