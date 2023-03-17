@@ -13,7 +13,7 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState } from "react";
+// import { useState } from "react";
 
 // react-router components
 import { Link } from "react-router-dom";
@@ -32,19 +32,32 @@ import MKTypography from "components/MKTypography";
 // Material Kit 2 React example components
 import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
 
-function DefaultNavbarMobile({ routes, open }) {
-  const [collapse, setCollapse] = useState("");
+function DefaultNavbarMobile({ routes, open, onLanguageChange= () => {} }) {
+  // const [collapse, setCollapse] = useState("");
 
-  const handleSetCollapse = (name) => (collapse === name ? setCollapse(false) : setCollapse(name));
+  // const handleSetCollapse = (name) => (collapse === name ? setCollapse(false) : setCollapse(name));
 
   const renderNavbarItems = routes.map(
-    ({ name, icon, collapse: routeCollapses, href, route, collapse: navCollapse }) => (
+    ({ name, icon, type, scrollToId, collapse: routeCollapses, href, route, collapse: navCollapse }) => (
       <DefaultNavbarDropdown
         key={name}
         name={name}
         icon={icon}
-        collapseStatus={name === collapse}
-        onClick={() => handleSetCollapse(name)}
+        type={type}
+        // collapseStatus={name === collapse}
+        onClick={() => {
+        if (type === "scroll") {
+          const element = document.getElementById(scrollToId);
+          if (element) {
+            element.scrollIntoView({
+              behavior: 'smooth',
+            });
+          }
+        }
+        else if (type === "language") {
+          onLanguageChange(name);
+        }
+      }}
         href={href}
         route={route}
         collapse={Boolean(navCollapse)}
@@ -157,10 +170,16 @@ function DefaultNavbarMobile({ routes, open }) {
   );
 }
 
+// Setting default values for the props of DefaultNavbarMobile
+DefaultNavbarMobile.defaultProps = {
+  onLanguageChange: () => {}
+};
+
 // Typechecking props for the DefaultNavbarMobile
 DefaultNavbarMobile.propTypes = {
   routes: PropTypes.arrayOf(PropTypes.object).isRequired,
   open: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]).isRequired,
+  onLanguageChange: PropTypes.func,
 };
 
 export default DefaultNavbarMobile;

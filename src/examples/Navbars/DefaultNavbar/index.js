@@ -112,6 +112,9 @@ const renderNavbarItems = routes.map(({ name, icon, href, route, collapse, scrol
             });
           }
         }
+        else if (type === "language") {
+          onLanguageChange(name);
+        }
       }}
     />
   ));
@@ -557,7 +560,7 @@ const renderNavbarItems = routes.map(({ name, icon, href, route, collapse, scrol
           borderRadius="xl"
           px={transparent ? 2 : 0}
         >
-          {mobileView && <DefaultNavbarMobile routes={routes} open={mobileNavbar} />}
+          {mobileView && <DefaultNavbarMobile routes={routes} open={mobileNavbar} onLanguageChange={onLanguageChange}/>}
         </MKBox>
       </MKBox>
       {dropdownMenu}
