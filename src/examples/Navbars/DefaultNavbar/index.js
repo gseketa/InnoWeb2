@@ -491,14 +491,12 @@ const renderNavbarItems = routes.map(({ name, icon, href, route, collapse, scrol
         })}
       >
         <MKBox display="flex" justifyContent="space-between" alignItems="center">
-          <Link to="/">
             <MKBox
               component="img"
               src={innlogo}
               alt="innlogo" 
               maxWidth="10rem"
             />
-          </Link>
           <MKBox
             color="inherit"
             display={{ xs: "none", lg: "flex" }}
