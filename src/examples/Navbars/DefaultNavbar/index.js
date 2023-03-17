@@ -268,7 +268,7 @@ const renderNavbarItems = routes.map(({ name, icon, href, route, collapse, scrol
             onClick={() => {
               if (item.type === "language") {
                 onLanguageChange(item.name);
-                console.log(`The current language is: ${item.name}`);
+                // console.log(`The current language is: ${item.name}`);
               } 
             }}
           >
