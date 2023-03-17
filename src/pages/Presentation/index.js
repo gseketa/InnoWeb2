@@ -341,8 +341,8 @@ function Presentation() {
                     pr={6}
                     pl={0}
                   >
-                    {LANGUAGES[language].services1Text1}<br /> 
-                    {LANGUAGES[language].services1Text2}
+                    <p>{LANGUAGES[language].services1Text1}</p><br /> 
+                    <p>{LANGUAGES[language].services1Text2}</p>
                 <ul style={{paddingLeft: '20px' }}>
                   <li>{LANGUAGES[language].services1Bullet1}</li>
                   <li>{LANGUAGES[language].services1Bullet2}</li>
@@ -378,8 +378,8 @@ function Presentation() {
                     pr={6}
                     pl={0}
                   >
-                    {LANGUAGES[language].services2Text1}<br /> 
-                    {LANGUAGES[language].services2Text2}
+                    <p>{LANGUAGES[language].services2Text1}</p><br /> 
+                    <p>{LANGUAGES[language].services2Text2}</p>
                 <ul style={{paddingLeft: '20px' }}>
                   <li>{LANGUAGES[language].services2Bullet1}</li>
                   <li>{LANGUAGES[language].services2Bullet2}</li>
