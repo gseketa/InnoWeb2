@@ -63,22 +63,9 @@ const routesDE = [
     type: "scroll"
   },
   {
-    name: "Sprache",
+    name: "english",
     icon: <LanguageIcon />,
-    collapse: [
-      {
-        name:"english",
-        type:"language"
-      },
-      {
-        name:"deutsch",
-        type:"language"
-      },
-      {
-        name:"hrvatski",
-        type:"language"
-      }
-      ]
+    type: "language"
   },
 ];
 

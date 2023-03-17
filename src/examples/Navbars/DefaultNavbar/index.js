@@ -112,6 +112,9 @@ const renderNavbarItems = routes.map(({ name, icon, href, route, collapse, scrol
             });
           }
         }
+        else if (type === "language") {
+          onLanguageChange(name);
+        }
       }}
     />
   ));
