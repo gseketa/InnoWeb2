@@ -36,7 +36,8 @@ import DottikonLogo from "assets/images/logos/customer-logos/Logo - Dottikon.jpg
 import DupontLogo from "assets/images/logos/customer-logos/Logo - Dupont.jpg";
 import EMSLogo from "assets/images/logos/customer-logos/Logo - EMS.jpg";
 import HZILogo from "assets/images/logos/customer-logos/Logo - HZI.jpg";
-import SiTecLogo from "assets/images/logos/customer-logos/Logo - Si-Tec.jpg";
+// import SiTecLogo from "assets/images/logos/customer-logos/Logo - Si-Tec.jpg";
+import GMLLogo from "assets/images/logos/customer-logos/Logo - GML.jpg";
 import OvivoLogo from "assets/images/logos/customer-logos/Logo - Ovivo.jpg";
 import SiemensLogo from "assets/images/logos/customer-logos/Logo - Siemens.jpg";
 // import AlstomLogo from "assets/images/logos/customer-logos/Logo - Alstom.png";
@@ -110,7 +111,7 @@ function Information({currentlanguage}) {
             <MKBox component="img" src={EMSLogo} alt="EMS" width="100%" opacity={1} />
           </Grid>.
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={SiTecLogo} alt="SiTec" width="100%" opacity={1} />
+            <MKBox component="img" src={GMLLogo} alt="GML" width="100%" opacity={1} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={OvivoLogo} alt="Ovivo" width="100%" opacity={1} />
