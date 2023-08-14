@@ -106,29 +106,24 @@ const LANGUAGES = {
   },
   deutsch: {
     weAre: 'WIR SIND',
-    weAreText:`ein Ingenieursunternehmen, das sich auf Projektmanagement, 
-    Ingenieursdesign und digitale Zwilling-Lösungen spezialisiert hat.`,
-    consultingTitle: 'INGENIEURSDESIGN & PROJEKTMANAGEMENT', 
-    consultingText: `Unsere hochmodernen Projektmanagementdienstleistungen decken 
-    Projekte jeder Größe von der detaillierten Planung bis zur 
-    erfolgreichen Ausführung und darüber hinaus ab. 
-    Als zuverlässiger Lieferant und effizienter Koordinator bieten 
-    wir zudem maßgeschneiderte multidisziplinäre Engineering-Lösungen für die 
-    optimale Leistung von Kraftwerken und Prozessanlagen.`, 
+    weAreText:`ein Ingenieurunternehmen, das auf Projektmanagement, Engineering und digitale Zwilling-Lösungen spezialisiert ist.`,
+    consultingTitle: 'ENGINEERING & PROJEKTMANAGEMENT', 
+    consultingText: `Unsere hochmodernen Projektmanagementdienstleistungen decken Projekte 
+    jeder Grösse von der detaillierten Planung bis zur erfolgreichen Ausführung und darüber 
+    hinaus ab. Als zuverlässiger Lieferant und effizienter Koordinator bieten wir zudem 
+    massgeschneiderte multidisziplinäre Engineering-Lösungen für eine optimale Leistung 
+    von Kraftwerken und Prozessanlagen.`, 
     engineeringTitle: 'DIGITALE ZWILLING-LÖSUNGEN',
-    engineeringText: `Wir streben danach, unseren Kunden durch die Kraft der digitalen
-     Zwillingstechnologie eine vollständige Kontrolle über ihre physischen 
-     Anlagen zu bieten. Durch die Konsolidierung von Daten und Dokumenten aus 
-     verschiedenen Quellen in eine einzige, geben wir 
-     unseren Kunden die Möglichkeit, fundierte Entscheidungen zu treffen und die 
-     Leistung ihrer Anlagen zu optimieren.`,
-    services1Title: 'INGENIEURSDESIGN & PROJEKTMANAGEMENT',
-    services1Text1: `Wir bieten Ingenieursdesign und Projektmanagementdienstleistungen 
+    engineeringText: `Durch Einsatz digitaler Zwillingstechnologie erhalten 
+    unsere Kunden die vollständige Übersicht und Kontrolle über ihre Anlagen. 
+    Mittels Konsolidierung von Daten und Dokumenten aus verschiedenen Quellen in eine einzige, 
+    können unsere Kunden fundierte Entscheidungen treffen und die Leistung ihrer Anlagen optimieren.`,
+    services1Title: 'ENGINEERING & PROJEKTMANAGEMENT',
+    services1Text1: `Wir bieten Engineering- und Projektmanagementdienstleistungen 
     für Investitionsprojekte sowie laufende Anlagenwartung und Baustellenunterstützung an. 
     Unser Expertenteam verfügt über umfangreiche Erfahrung in der Anlagentechnik und im Anlagenbetrieb, 
-    unter Verwendung modernster Werkzeuge und Erfüllung internationaler sowie nationaler Normen.`,
-    services1Text2: `Mit unserem Team und einem breiten Netzwerk von Partnern können wir folgende 
-    Dienstleistungen anbieten:`,
+    unter Verwendung modernster Tools sowie Erfüllung internationaler und nationaler Normen.`,
+    services1Text2: `Mit unserem Team und einem breiten Netzwerk von Partnern bieten wir folgende Dienstleistungen an:`,
     services1Bullet1: 'Projektmanagement',
     services1Bullet2: 'Projektüberwachung und -steuerung',
     services1Bullet3: 'Verfahrenstechnik und -design',
@@ -138,22 +133,20 @@ const LANGUAGES = {
     services1Bullet7: 'Elektrotechnik',
     services1Bullet8: 'Mess- und Regeltechnik',
     services2Title: 'DIGITALE ZWILLING-LÖSUNGEN',
-    services2Text1: `Ein digitaler Zwilling ist ein virtuelles Modell 
-    physischer Anlagen, das 2D- und 3D-Daten, Laserscans, Listen, Zeichnungen 
-    und Anlagenhistorie konsolidiert und somit Zugriff auf Anlagendaten jeder 
-    Quelle ermöglicht. Durch die Ausrichtung der Dokumentation auf die tatsächlichen 
-    Anlagenbedingungen können Entscheidungsträger fundierte Entscheidungen auf der Grundlage 
-    genauer und aktueller Informationen treffen und letztendlich die Kluft zwischen den 
-    As-built-Bedingungen (wie die Anlage gebaut wurde) und den As-documented-Bedingungen 
-    (wie die Anlage gebaut werden sollte) schließen.`,
-    services2Text2: `Basierend auf unserer umfangreichen Erfahrung bei der 
-    Integration von Daten aus verschiedenen Anwendungen und Tools 
-    in digitale Zwilling-Lösungen können wir folgende Dienstleistungen anbieten:`,
-    services2Bullet1: 'Sammeln und Migration bestehender Dokumentation und Daten',
-    services2Bullet2: 'Überprüfen und Aktualisieren von Anlagendaten und Aufdecken potenzieller Daten- und Dokumentationslücken',
-    services2Bullet3: 'Verknüpfung von Daten und Dokumentation in einem einzigen virtuellen Modell',
-    services2Bullet4: 'Einsatz des digitalen Zwillings in täglichen Betriebsabläufen, Wartung und Projekten',
-    services2Bullet5: 'Coaching und Schulung von Kundenmitarbeitern und/oder Auftragnehmern',
+    services2Text1: `Ein digitaler Zwilling ist ein virtuelles Modell physischer Anlagen, 
+    welches 2D- und 3D-Daten, Laserscans, Listen, Zeichnungen und Anlagenhistorie konsolidiert 
+    und somit den Zugriff auf Anlagendaten jeder Quelle ermöglicht. Durch die Ausrichtung der Dokumentation 
+    auf die tatsächlichen Anlagenbedingungen können Entscheidungsträger fundierte 
+    Entscheidungen auf der Grundlage genauer und aktueller Informationen treffen und 
+    letztendlich die Kluft zwischen den As-built-Bedingungen (wie die Anlage gebaut wurde) 
+    und den As-documented-Bedingungen (wie die Anlage gebaut werden sollte) schliessen.`,
+    services2Text2: `Basierend auf unserer umfangreichen Erfahrung bei der Integration von Daten aus 
+    verschiedenen Anwendungen und Tools in digitale Zwilling-Lösungen bieten wir folgende Dienstleistungen an:`,
+    services2Bullet1: 'Sammeln und Migrieren bestehender Dokumentation und Daten',
+    services2Bullet2: 'Überprüfen und Aktualisieren von Anlagendaten sowie Aufdecken potenzieller Daten- und Dokumentationslücken',
+    services2Bullet3: 'Verknüpfen von Daten und Dokumentation in einem einzigen virtuellen Modell',
+    services2Bullet4: 'Einsatz des digitalen Zwillings in täglichen Betriebsabläufen, bei Wartung und in Projekten',
+    services2Bullet5: 'Coachings und Schulungen von Kundenmitarbeitern und/oder Kontraktoren',
     contactCountrySwitzerland: `Schweitz`,
     contactCountryCroatia: `Kroatien`,
   },
