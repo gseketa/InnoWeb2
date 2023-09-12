@@ -147,7 +147,7 @@ const LANGUAGES = {
     services2Bullet3: 'Verknüpfen von Daten und Dokumentation in einem einzigen virtuellen Modell',
     services2Bullet4: 'Einsatz des digitalen Zwillings in täglichen Betriebsabläufen, bei Wartung und in Projekten',
     services2Bullet5: 'Coachings und Schulungen von Kundenmitarbeitern und/oder Kontraktoren',
-    contactCountrySwitzerland: `Schweitz`,
+    contactCountrySwitzerland: `Schweiz`,
     contactCountryCroatia: `Kroatien`,
   },
   hrvatski: {
