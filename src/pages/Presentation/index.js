@@ -103,6 +103,11 @@ const LANGUAGES = {
     services2Bullet5: 'Coaching and training customer staff and/or contractors',
     contactCountrySwitzerland: `Switzerland`,
     contactCountryCroatia: `Croatia`,
+    contactCountryGermany: `Germany`,
+    contactVATSwitzerland: `VAT No`,
+    contactVATCroatia: `VAT No`,
+    contactVATGermany: `VAT No`,
+    contactDirector: `Managing Director`,
   },
   deutsch: {
     weAre: 'WIR SIND',
@@ -149,6 +154,11 @@ const LANGUAGES = {
     services2Bullet5: 'Coachings und Schulungen von Kundenmitarbeitern und/oder Kontraktoren',
     contactCountrySwitzerland: `Schweiz`,
     contactCountryCroatia: `Kroatien`,
+    contactCountryGermany: `Deutschland`,
+    contactVATSwitzerland: `MwStNr`,
+    contactVATCroatia: `USt-IdNr`,
+    contactVATGermany: `USt-IdNr`,
+    contactDirector: `Geschäftsführer`,
   },
   hrvatski: {
     weAre: 'MI SMO',
@@ -396,8 +406,8 @@ function Presentation() {
       </Card>
         <Container id="contactContainer" sx={{ mt: 0, mb:3 }}>
           <Grid container spacing={0} justify="center">
-            <Grid xs={0} lg={3}/>
-            <Grid item xs={12} lg={3} offset={3}>
+            <Grid xs={0} lg={1.5}/> 
+            <Grid item xs={12} lg={3} offset={0}>
                 <MKBox lineHeight={1} p={0} textAlign="center">
                   <MKTypography
                     display="block"
@@ -406,7 +416,7 @@ function Presentation() {
                     mt={2}
                     mb={1.5}
                   >
-                   Innoveva GmbH
+                   {LANGUAGES[language].contactCountrySwitzerland}
                   </MKTypography>
                   <MKTypography
                     display="block"
@@ -415,10 +425,11 @@ function Presentation() {
                     pr={0}
                     pl={0}
                   >
+                    Innoveva GmbH<br /> 
                     Werkstrasse 12<br /> 
-                    5080 Laufenburg<br /> 
-                    {LANGUAGES[language].contactCountrySwitzerland}<br /> 
-                    UID: CHE-464.171.623<br /> 
+                    5080 Laufenburg, {LANGUAGES[language].contactCountrySwitzerland}<br /> 
+                    {LANGUAGES[language].contactVATSwitzerland}: CHE-464.171.623 MWST<br /> 
+                    {LANGUAGES[language].contactDirector}: Božidar Šeketa<br />  
                     Tel: 0041628744070<br />
                     info@innoveva.com<br />  
                   </MKTypography>
@@ -433,7 +444,7 @@ function Presentation() {
                     mt={2}
                     mb={1.5}
                   >
-                    Innoveva d.o.o.
+                    {LANGUAGES[language].contactCountryCroatia}
                   </MKTypography>
                   <MKTypography
                     display="block"
@@ -442,11 +453,40 @@ function Presentation() {
                     pr={0}
                     pl={0}
                   >
+                    Innoveva d.o.o<br /> 
                     Siget 19<br /> 
-                    10000 Zagreb<br /> 
-                    {LANGUAGES[language].contactCountryCroatia}<br /> 
-                    OIB: 34782265468<br /> 
+                    10000 Zagreb, {LANGUAGES[language].contactCountryCroatia}<br /> 
+                    {LANGUAGES[language].contactVATCroatia}: HR34782265468<br /> 
+                    {LANGUAGES[language].contactDirector}: Goran Šeketa<br /> 
                     Tel: 00385916114662<br />
+                    info@innoveva.com<br /> 
+                  </MKTypography>
+              </MKBox>              
+            </Grid>
+            <Grid item xs={12} lg={3} lgOffset={1}>
+                <MKBox lineHeight={1} p={0} textAlign="center">
+                  <MKTypography
+                    display="block"
+                    variant="5"
+                    fontWeight="bold"
+                    mt={2}
+                    mb={1.5}
+                  >
+                    {LANGUAGES[language].contactCountryGermany}
+                  </MKTypography>
+                  <MKTypography
+                    display="block"
+                    variant="body2"
+                    color="text"
+                    pr={0}
+                    pl={0}
+                  >
+                    Innoveva GmbH<br /> 
+                    Alemannenstrasse 14<br /> 
+                    D-79689 Maulburg, {LANGUAGES[language].contactCountryGermany}<br /> 
+                    {LANGUAGES[language].contactVATGermany}: DE247786535<br /> 
+                    {LANGUAGES[language].contactDirector}: Dirk Hanewacker<br /> 
+                    Tel: 004915140258781<br />
                     info@innoveva.com<br /> 
                   </MKTypography>
               </MKBox>              
