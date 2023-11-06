@@ -71,6 +71,7 @@ function Counters({currentlanguage}) {
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
             <DefaultCounterCard
               count={25}
+              suffix="+"
               title={LANGUAGES[currentlanguage].secondTitle}
               description={LANGUAGES[currentlanguage].secondText}
             />
