@@ -500,7 +500,14 @@ function Presentation() {
                     pr={0}
                     pl={0}
                   >
-                    All rights reserved. Copyright &copy; Innoveva GmbH {date} 
+                    All rights reserved. Copyright &copy; Innoveva d.o.o. {date}. {' '}
+                      <a
+                        href={`${process.env.PUBLIC_URL}/gdpr_policy.pdf`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        GDPR Policy
+                      </a> 
                   </MKTypography>
           </Grid>
         </Container>
