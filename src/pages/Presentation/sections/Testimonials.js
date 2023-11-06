@@ -44,16 +44,26 @@ import SiemensLogo from "assets/images/logos/customer-logos/Logo - Siemens.jpg";
 // import STSILogo from "assets/images/logos/customer-logos/Logo - STSI.png";
 // import MANLogo from "assets/images/logos/customer-logos/Logo - MAN.png";
 
+import Bal3DLogo from "assets/images/logos/partner-logos/Bal3D.jpeg";
+import BearingPointLogo from "assets/images/logos/partner-logos/BearingPoint.png";
+import CaxpertsLogo from "assets/images/logos/partner-logos/Caxperts.png";
+import DitraLogo from "assets/images/logos/partner-logos/DITRA.png";
+import KPCDevLogo from "assets/images/logos/partner-logos/KPCDev.jpg";
+import ProjectTeamLogo from "assets/images/logos/partner-logos/ProjectTeam.jpg";
+import ScantecLogo from "assets/images/logos/partner-logos/scantec.png";
+
 const LANGUAGES = {
   english: {
     firstText: 'Trusted by over',
     secondText: '30+ companies', 
     thirdText: 'in the chemical, petrochemical, mining, power and pharmaceutical industry',
+    fourthText: 'Our partners',
   },
   deutsch: {
     firstText: 'Vertrauen von über',
     secondText: '30+ Unternehmen', 
     thirdText: 'in der Chemie-, Petrochemie-, Bergbau-, Energie- und Pharmaindustrie',
+    fourthText: 'Unsere Partner',
   },
   hrvatski: {
     firstText: 'Pouzdan izbor za više od',
@@ -119,6 +129,42 @@ function Information({currentlanguage}) {
           <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={SiemensLogo} alt="Siemens" width="100%" opacity={1} />
           </Grid>
+          </Grid>
+        <Grid
+          container
+          item
+          xs={12}
+          lg={6}
+          justifyContent="center"
+          sx={{ mx: "auto", textAlign: "center" }}
+          >
+          <MKTypography variant="h2" mt={4}>{LANGUAGES[currentlanguage].fourthText}</MKTypography>
+        </Grid>
+        <Divider sx={{ my: 3 }} />
+        <Grid container spacing={4} justifyContent="center" alignItems="center">
+        <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={Bal3DLogo} alt="Bal3D" width="100%" opacity={1} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={BearingPointLogo} alt="BearingPoint" width="100%" opacity={1} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={CaxpertsLogo} alt="Caxperts" width="100%" opacity={1} />
+          </Grid>
+         <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={DitraLogo} alt="Ditra" width="70%" opacity={1} />
+          </Grid>
+           <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={KPCDevLogo} alt="KPCDev" width="70%" opacity={1} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={ProjectTeamLogo} alt="ProjectTeam" width="70%" opacity={1} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={ScantecLogo} alt="Scantec" width="100%" opacity={1} />
+          </Grid>
+        </Grid>
+          
 
 {/*          <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={AlstomLogo} alt="Alstom" width="100%" opacity={1} />
@@ -130,7 +176,7 @@ function Information({currentlanguage}) {
             <MKBox component="img" src={MANLogo} alt="MAN" width="100%" opacity={1} />
           </Grid>*/}
 
-        </Grid>
+
       </Container>
     </MKBox>
   );
