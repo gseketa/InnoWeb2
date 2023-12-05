@@ -51,6 +51,7 @@ import DitraLogo from "assets/images/logos/partner-logos/DITRA.png";
 import KPCDevLogo from "assets/images/logos/partner-logos/KPCDev.jpg";
 import ProjectTeamLogo from "assets/images/logos/partner-logos/ProjectTeam.jpg";
 import ScantecLogo from "assets/images/logos/partner-logos/scantec.png";
+import TibaLogo from "assets/images/logos/partner-logos/Tiba.png";
 
 const LANGUAGES = {
   english: {
@@ -143,6 +144,9 @@ function Information({currentlanguage}) {
         <Divider sx={{ my: 3 }} />
         <Grid container spacing={4} justifyContent="center" alignItems="center">
         <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={DitraLogo} alt="Ditra" width="100%" opacity={1} />
+          </Grid>
+        <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={Bal3DLogo} alt="Bal3D" width="100%" opacity={1} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
@@ -151,11 +155,9 @@ function Information({currentlanguage}) {
           <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={CaxpertsLogo} alt="Caxperts" width="100%" opacity={1} />
           </Grid>
-         <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={DitraLogo} alt="Ditra" width="70%" opacity={1} />
-          </Grid>
+         
            <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={KPCDevLogo} alt="KPCDev" width="70%" opacity={1} />
+            <MKBox component="img" src={KPCDevLogo} alt="KPCDev" width="90%" opacity={1} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={ProjectTeamLogo} alt="ProjectTeam" width="70%" opacity={1} />
@@ -163,6 +165,10 @@ function Information({currentlanguage}) {
           <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={ScantecLogo} alt="Scantec" width="100%" opacity={1} />
           </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={TibaLogo} alt="Tiba" width="100%" opacity={1} />
+          </Grid>
+
         </Grid>
           
 

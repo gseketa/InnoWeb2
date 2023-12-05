@@ -502,11 +502,11 @@ function Presentation() {
                   >
                     All rights reserved. Copyright &copy; Innoveva d.o.o. {date}. {' '}
                       <a
-                        href={`${process.env.PUBLIC_URL}/gdpr_policy.pdf`}
+                        href={`${process.env.PUBLIC_URL}/Privacy_Policy.pdf`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        GDPR Policy
+                        Privacy Policy
                       </a> 
                   </MKTypography>
           </Grid>
