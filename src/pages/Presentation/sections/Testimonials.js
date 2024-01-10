@@ -44,7 +44,7 @@ import SiemensLogo from "assets/images/logos/customer-logos/Logo - Siemens.jpg";
 // import STSILogo from "assets/images/logos/customer-logos/Logo - STSI.png";
 // import MANLogo from "assets/images/logos/customer-logos/Logo - MAN.png";
 
-import Bal3DLogo from "assets/images/logos/partner-logos/Bal3D.jpeg";
+import RhybaLogo from "assets/images/logos/partner-logos/Rhyba.png";
 import BearingPointLogo from "assets/images/logos/partner-logos/BearingPoint.png";
 import CaxpertsLogo from "assets/images/logos/partner-logos/Caxperts.png";
 import DitraLogo from "assets/images/logos/partner-logos/DITRA.png";
@@ -147,26 +147,26 @@ function Information({currentlanguage}) {
             <MKBox component="img" src={DitraLogo} alt="Ditra" width="100%" opacity={1} />
           </Grid>
         <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={Bal3DLogo} alt="Bal3D" width="100%" opacity={1} />
+            <MKBox component="img" src={RhybaLogo} alt="Rhyba" width="100%" opacity={1} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={BearingPointLogo} alt="BearingPoint" width="100%" opacity={1} />
+            <MKBox component="img" src={KPCDevLogo} alt="Scantec" width="80%" opacity={1} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={CaxpertsLogo} alt="Caxperts" width="100%" opacity={1} />
+            <MKBox component="img" src={CaxpertsLogo} alt="BearingPoint" width="100%" opacity={1} />
           </Grid>
          
            <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={KPCDevLogo} alt="KPCDev" width="90%" opacity={1} />
-          </Grid>
-          <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={ProjectTeamLogo} alt="ProjectTeam" width="70%" opacity={1} />
-          </Grid>
-          <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={ScantecLogo} alt="Scantec" width="100%" opacity={1} />
-          </Grid>
-          <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={TibaLogo} alt="Tiba" width="100%" opacity={1} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={ProjectTeamLogo} alt="Caxperts" width="70%" opacity={1} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={ScantecLogo} alt="KPCDev" width="100%" opacity={1} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={BearingPointLogo} alt="ProjectTeam" width="100%" opacity={1} />
           </Grid>
 
         </Grid>
