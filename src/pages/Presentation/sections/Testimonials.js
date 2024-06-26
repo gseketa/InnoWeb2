@@ -52,6 +52,7 @@ import KPCDevLogo from "assets/images/logos/partner-logos/KPCDev.jpg";
 import ProjectTeamLogo from "assets/images/logos/partner-logos/ProjectTeam.jpg";
 import ScantecLogo from "assets/images/logos/partner-logos/scantec.png";
 import TibaLogo from "assets/images/logos/partner-logos/Tiba.png";
+import MISLogo from "assets/images/logos/partner-logos/MIS.jpg";
 
 const LANGUAGES = {
   english: {
@@ -167,6 +168,9 @@ function Information({currentlanguage}) {
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={BearingPointLogo} alt="ProjectTeam" width="100%" opacity={1} />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <MKBox component="img" src={MISLogo} alt="MIS" width="60%" opacity={1} />
           </Grid>
 
         </Grid>

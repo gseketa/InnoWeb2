@@ -48,6 +48,7 @@ import IconEngineering from "assets/images/IconEngineering.png";
 import bgImage from "assets/images/innMain3.png";
 import innserv1 from "assets/images/innserv1.jpg";
 import innserv2 from "assets/images/innserv2.png";
+import BV9001 from "assets/images/logos/iso-logo/BV9001.png";
 
 const date = new Date().getFullYear();
 
@@ -400,6 +401,9 @@ function Presentation() {
         </Container>
         <Container id="referencesContainer" sx={{ mt: 5, mb:5 }}>
         <Counters currentlanguage={language} />
+        <Grid container justifyContent="center" alignItems="center">
+              <MKBox component="img" src={BV9001} alt="BV9001" width="20%" sx={{ mb: 5 }} />
+        </Grid>
         <Testimonials currentlanguage={language} />
         </Container>
         
@@ -502,11 +506,11 @@ function Presentation() {
                   >
                     All rights reserved. Copyright &copy; Innoveva d.o.o. {date}. {' '}
                       <a
-                        href={`${process.env.PUBLIC_URL}/Privacy_Policy.pdf`}
+                        href={`${process.env.PUBLIC_URL}/Impressum_Privacy_Policy.pdf`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Privacy Policy
+                        Impressum & Privacy Policy
                       </a> 
                   </MKTypography>
           </Grid>
