@@ -430,8 +430,8 @@ function Presentation() {
                     pl={0}
                   >
                     Innoveva GmbH<br /> 
-                    Werkstrasse 12<br /> 
-                    5080 Laufenburg, {LANGUAGES[language].contactCountrySwitzerland}<br /> 
+                    Marktgasse 25/27<br /> 
+                    4310 Rheinfelden, {LANGUAGES[language].contactCountrySwitzerland}<br /> 
                     {LANGUAGES[language].contactVATSwitzerland}: CHE-464.171.623 MWST<br /> 
                     {LANGUAGES[language].contactDirector}: Božidar Šeketa<br />  
                     Tel: 0041628744070<br />
