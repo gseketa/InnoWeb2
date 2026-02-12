@@ -54,6 +54,7 @@ import ScantecLogo from "assets/images/logos/partner-logos/scantec.png";
 import TibaLogo from "assets/images/logos/partner-logos/Tiba.png";
 import MISLogo from "assets/images/logos/partner-logos/MIS.jpg";
 
+/* v2 */
 const LANGUAGES = {
   english: {
     firstText: 'Trusted by over',
